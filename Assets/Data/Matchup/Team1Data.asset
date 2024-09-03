@@ -1,0 +1,1024 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b4ab676f64cd0342abdeb201fa063f1, type: 3}
+  m_Name: Team1Data
+  m_EditorClassIdentifier: 
+  Race: Necrons
+  Detachment: Canoptek Court
+  TeamData:
+  - Model:
+      Name: Illuminor Szeras
+      M: 8"
+      T: 8
+      Sv: 2+
+      W: 9
+      Ld: 6+
+      OC: 3
+    ModelCount: 1
+    SameUnitCount: 1
+    ISv:
+      Value: 4+
+      Type: 0
+    Sprite: {fileID: 0}
+    Categories:
+    - 'Faction: Necrons'
+    - Infantry
+    - Character
+    - Epic Hero
+    - Cryptek
+    - Illuminor Szeras
+    Rules:
+    - Power Matrix
+    - Reanimation Protocols
+    - Feel No Pain 4+
+    Abilities:
+    - Name: Invulnerable Save
+      Ability: This model has a 4+ invulnerable save.
+    - Name: Illuminor
+      Ability: "While this model is within 3\" of one or more\_other friendly NECRONS
+        units, this model has the Lone\_Operative ability."
+    - Name: Mechanical Augmentation (Aura)
+      Ability: "While a friendly NECRONS BATTLELINE\_unit is within 3\" of this model,
+        each time a model\_in that unit makes an attack, improve the Armour Penetration\_characteristic
+        of that attack by 1, and each time an attack\_targets that unit, worsen the
+        Armour Penetration characteristic\_of that attack by 1."
+    - Name: Atomic Energy Manipulator
+      Ability: "At the end of the Fight phase, if\_this model destroyed one or more
+        models this phase, until\_the end of the battle, add 3\" to the range of
+        its Mechanical\_Augmentation ability (to a maximum of 12\")."
+    Weapons:
+    - Name: Eldritch lance
+      Range: 36"
+      A: 3
+      Sk: 3+
+      S: 9
+      AP: -3
+      D: 3
+      Type: 1
+      Keywords:
+      - '-'
+    - Name: Eldritch lance
+      Range: Melee
+      A: 4
+      Sk: 3+
+      S: 9
+      AP: -3
+      D: 3
+      Type: 0
+      Keywords:
+      - '-'
+    - Name: Impaling legs
+      Range: Melee
+      A: 4
+      Sk: 3+
+      S: 6
+      AP: -1
+      D: 1
+      Type: 0
+      Keywords:
+      - Extra Attacks
+  - Model:
+      Name: Imotekh the Stormlord
+      M: 5"
+      T: 5
+      Sv: 2+
+      W: 6
+      Ld: 6+
+      OC: 1
+    ModelCount: 1
+    SameUnitCount: 1
+    ISv:
+      Value: 4+
+      Type: 0
+    Sprite: {fileID: 0}
+    Categories:
+    - 'Faction: Necrons'
+    - Infantry
+    - Character
+    - Epic Hero
+    - Noble
+    - Imotekh the Stormlord
+    Rules:
+    - Reanimation Protocols
+    - Leader
+    - Power Matrix
+    Abilities:
+    - Name: Invulnerable Save
+      Ability: This model has a 4+ invulnerable save.
+    - Name: Leader
+      Ability: "This model can be attached to the following units:\n\u25A0 IMMORTALS\n\u25A0
+        LYCHGUARD\n\u25A0 NECRON WARRIORS"
+    - Name: Grand Strategist
+      Ability: "At the start of your Command phase, if this\_model is on the battlefield,
+        you gain 1CP."
+    - Name: Lord of the Storm
+      Ability: "Once per battle, at the end of your\_Command phase, this model can
+        use this ability. If it does, roll\_one D6 for each enemy unit within 12\"
+        of this model: on a 2-5,\_that enemy unit suffers D3 mortal wounds; on a
+        6, that enemy\_unit suffers D3+3 mortal wounds."
+    Weapons:
+    - Name: Gauntlet of Fire
+      Range: 12"
+      A: D6
+      Sk: N/A
+      S: 5
+      AP: -1
+      D: 1
+      Type: 1
+      Keywords:
+      - Ignores Cover
+      - Torrent
+    - Name: Staff of the Destroyer
+      Range: 18"
+      A: 3
+      Sk: 2+
+      S: 6
+      AP: -3
+      D: 2
+      Type: 1
+      Keywords:
+      - '-'
+    - Name: Staff of the Destroyer
+      Range: Melee
+      A: 4
+      Sk: 2+
+      S: 6
+      AP: -3
+      D: 2
+      Type: 0
+      Keywords:
+      - Devastating Wounds
+  - Model:
+      Name: Orikan the Diviner
+      M: 5"
+      T: 4
+      Sv: 4+
+      W: 4
+      Ld: 6+
+      OC: 1
+    ModelCount: 1
+    SameUnitCount: 1
+    ISv:
+      Value: 4+
+      Type: 0
+    Sprite: {fileID: 0}
+    Categories:
+    - 'Faction: Necrons'
+    - Infantry
+    - Character
+    - Epic Hero
+    - Cryptek
+    - Chronomancer
+    - Orikan the Diviner
+    Rules:
+    - Reanimation Protocols
+    - Power Matrix
+    - Leader
+    Abilities:
+    - Name: Master Chronomancer
+      Ability: "While this model is leading a unit,\_models in that unit have a 4+
+        invulnerable save."
+    - Name: Invulnerable Save
+      Ability: This model has a 4+ invulnerable save.
+    - Name: The Stars Are Right
+      Ability: "Once per battle, at the start of the Fight\_phase, this model can
+        use this ability. If it does, until the end\_of the phase, triple the Attacks
+        and Strength characteristics of\_this model\u2019s Staff of Tomorrow and
+        every successful Wound\_roll made for this model\u2019s attacks scores a
+        Critical Wound."
+    - Name: Leader
+      Ability: "This model can be attached to the following units:\n\u25A0 IMMORTALS\n\u25A0
+        NECRON WARRIORS\nYou can attach this model to one of the above units even\_if
+        one ROYAL WARDEN or NOBLE model has already been\_attached to it. If you
+        do, and that Bodyguard unit is destroyed,\_the Leader units attached to it
+        become separate units, with\_their original Starting Strengths."
+    Weapons:
+    - Name: Staff of Tomorrow
+      Range: Melee
+      A: 2
+      Sk: 3+
+      S: 4
+      AP: -3
+      D: D3
+      Type: 0
+      Keywords:
+      - Devastating Wounds
+  - Model:
+      Name: Chronomancer
+      M: 5"
+      T: 4
+      Sv: 4+
+      W: 4
+      Ld: 6+
+      OC: 1
+    ModelCount: 1
+    SameUnitCount: 1
+    ISv:
+      Value: 4+
+      Type: 0
+    Sprite: {fileID: 0}
+    Categories:
+    - 'Faction: Necrons'
+    - Infantry
+    - Character
+    - Cryptek
+    - Chronomancer
+    Rules:
+    - Power Matrix
+    - Leader
+    - Reanimation Protocols
+    Abilities:
+    - Name: Leader
+      Ability: "This model can be attached to the following units:\n\u25A0 IMMORTALS\n\u25A0
+        NECRON WARRIORS\nYou can attach this model to one of the above units even\_if
+        one ROYAL WARDEN or NOBLE model has already been\_attached to it. If you
+        do, and that Bodyguard unit is destroyed,\_the Leader units attached to it
+        become separate units, with\_their original Starting Strengths."
+    - Name: Timesplinter Mantle
+      Ability: "While this model is leading a unit, each\_time an attack targets
+        that unit, subtract 1 from the Hit roll."
+    - Name: Chronometron
+      Ability: "In your Shooting phase, after this model\u2019s unit\_has shot, if
+        it is not within Engagement Range of any enemy\_units, that unit can make
+        a Normal move of up to 5\". If it does, until the end of the\_turn, that
+        unit is not eligible to declare a charge."
+    - Name: Invulnerable Save
+      Ability: This model has a 4+ invulnerable save.
+    Weapons:
+    - Name: Chronomancer's stave
+      Range: Melee
+      A: 3
+      Sk: 4+
+      S: 5
+      AP: -1
+      D: 1
+      Type: 0
+      Keywords:
+      - '-'
+    - Name: Chronomancer's stave
+      Range: 18"
+      A: D6
+      Sk: 4+
+      S: 5
+      AP: -1
+      D: 1
+      Type: 1
+      Keywords:
+      - Blast
+  - Model:
+      Name: Plasmancer
+      M: 5"
+      T: 4
+      Sv: 4+
+      W: 4
+      Ld: 6+
+      OC: 1
+    ModelCount: 1
+    SameUnitCount: 1
+    ISv:
+      Value: 
+      Type: 0
+    Sprite: {fileID: 0}
+    Categories:
+    - 'Faction: Necrons'
+    - Infantry
+    - Character
+    - Cryptek
+    - Plasmancer
+    Rules:
+    - Power Matrix
+    - Leader
+    - Reanimation Protocols
+    Abilities:
+    - Name: Leader
+      Ability: "This model can be attached to the following units:\n\u25A0 IMMORTALS\n\u25A0
+        NECRON WARRIORS\nYou can attach this model to one of the above units even\_if
+        one ROYAL WARDEN or NOBLE model has already been\_attached to it. If you
+        do, and that Bodyguard unit is destroyed,\_the Leader units attached to it
+        become separate units, with\_their original Starting Strengths."
+    - Name: Harbinger of Destruction
+      Ability: "While this model is leading a unit,\_each time a model in that unit
+        makes a ranged attack, a\_successful unmodifed Hit roll of 5+ scores a Critical
+        Hit."
+    - Name: Living Lightning
+      Ability: "In your Shooting phase, select one enemy\_unit within 18\" of and
+        visible to this model and roll four D6: for each 4+, that enemy unit suffers
+        1\_mortal wound."
+    - Name: Metalodermal Tesla Weave
+      Ability: 'CRYPTEK model only. Once per phase, when an enemy unit selects the
+        bearer''s unit as a target of a charge, roll one D6: on a 2-5, that enemy
+        unit suffers D3 mortal wounds, on a 6, that enemy unit suffers 3 mortal wounds.'
+    Weapons:
+    - Name: Plasmic lance
+      Range: 18"
+      A: 3
+      Sk: 4+
+      S: 7
+      AP: -3
+      D: 2
+      Type: 1
+      Keywords:
+      - '-'
+    - Name: Plasmic lance
+      Range: Melee
+      A: 2
+      Sk: 4+
+      S: 7
+      AP: -3
+      D: 2
+      Type: 0
+      Keywords:
+      - '-'
+  - Model:
+      Name: Royal Warden
+      M: 5"
+      T: 5
+      Sv: 3+
+      W: 4
+      Ld: 6+
+      OC: 1
+    ModelCount: 1
+    SameUnitCount: 2
+    ISv:
+      Value: 
+      Type: 0
+    Sprite: {fileID: 0}
+    Categories:
+    - 'Faction: Necrons'
+    - Infantry
+    - Character
+    - Royal Warden
+    Rules:
+    - Power Matrix
+    - Leader
+    - Reanimation Protocols
+    Abilities:
+    - Name: Leader
+      Ability: "This model can be attached to the following units:\n\u25A0 IMMORTALS\n\u25A0
+        NECRON WARRIORS"
+    - Name: Adaptive Strategy
+      Ability: This model's unit is eligible to shoot and declare a charge in a turn
+        in which it Fell Back.
+    - Name: Engrammatic Logic
+      Ability: "Once per battle, at the start of any\_phase, you can select one friendly
+        NECRONS unit that is\_Battle-shocked and within 12\" of this model. That
+        unit is no\_longer Battle-shocked."
+    Weapons:
+    - Name: Relic gauss blaster
+      Range: 24"
+      A: 2
+      Sk: 3+
+      S: 5
+      AP: -1
+      D: 2
+      Type: 1
+      Keywords:
+      - Lethal Hits
+      - Rapid Fire 2
+    - Name: Close combat weapon
+      Range: Melee
+      A: 4
+      Sk: 3+
+      S: 5
+      AP: 0
+      D: 1
+      Type: 0
+      Keywords:
+      - '-'
+  - Model:
+      Name: Technomancer
+      M: 10"
+      T: 4
+      Sv: 4+
+      W: 4
+      Ld: 6+
+      OC: 1
+    ModelCount: 1
+    SameUnitCount: 1
+    ISv:
+      Value: 
+      Type: 0
+    Sprite: {fileID: 0}
+    Categories:
+    - 'Faction: Necrons'
+    - Infantry
+    - Character
+    - Fly
+    - Cryptek
+    - Technomancer
+    Rules:
+    - Power Matrix
+    - Leader
+    - Reanimation Protocols
+    Abilities:
+    - Name: Leader
+      Ability: "This model can be attached to the following units:\n\u25A0 CANOPTEK
+        WRAITHS\n\u25A0 IMMORTALS\n\u25A0 NECRON WARRIORS\nYou can attach this model
+        to one of the above units even\_if one ROYAL WARDEN or NOBLE model has already
+        been\_attached to it. If you do, and that Bodyguard unit is destroyed,\_the
+        Leader units attached to it become separate units, with\_their original Starting
+        Strengths."
+    - Name: Rites of Reanimation
+      Ability: "While this model is leading a unit,\_models in that unit have the
+        Feel No Pain 5+ ability."
+    - Name: Technomancer
+      Ability: "At the end of your Movement phase, select one friendly NECRONS model
+        within 6\" of the bearer.\_That model regains up to D3 lost wounds. Each
+        model can\_only be selected for this ability once per turn."
+    - Name: Hyperphasic Fulcrum
+      Ability: CRYPTEK model only. While the bearer is leading a unit, if that unit
+        is wholly within your army's Power Matrix, each time a model in that unit
+        makes an attack, re-roll a Wound roll of 1.
+    Weapons:
+    - Name: Staff of light
+      Range: 18"
+      A: 3
+      Sk: 4+
+      S: 5
+      AP: -2
+      D: 1
+      Type: 1
+      Keywords:
+      - '-'
+    - Name: Staff of light
+      Range: Melee
+      A: 2
+      Sk: 4+
+      S: 5
+      AP: -2
+      D: 1
+      Type: 0
+      Keywords:
+      - '-'
+  - Model:
+      Name: Immortals
+      M: 5"
+      T: 5
+      Sv: 3+
+      W: 1
+      Ld: 7+
+      OC: 2
+    ModelCount: 10
+    SameUnitCount: 1
+    ISv:
+      Value: 
+      Type: 0
+    Sprite: {fileID: 0}
+    Categories:
+    - 'Faction: Necrons'
+    - Infantry
+    - Battleline
+    - Immortals
+    Rules:
+    - Power Matrix
+    - Reanimation Protocols
+    Abilities:
+    - Name: Implacable Eradication
+      Ability: "Each time a model in this unit makes\_an attack, re-roll a Wound
+        roll of 1. If the target of that attack\_is an enemy unit within range of
+        an objective marker, you can\_re-roll the Wound roll instead."
+    Weapons:
+    - Name: Close combat weapon
+      Range: Melee
+      A: 2
+      Sk: 3+
+      S: 4
+      AP: 0
+      D: 1
+      Type: 0
+      Keywords:
+      - '-'
+    - Name: Tesla carbine
+      Range: 24"
+      A: 2
+      Sk: 3+
+      S: 5
+      AP: 0
+      D: 1
+      Type: 1
+      Keywords:
+      - Assault
+      - Sustained Hits 2
+  - Model:
+      Name: Immortals
+      M: 5"
+      T: 5
+      Sv: 3+
+      W: 1
+      Ld: 7+
+      OC: 2
+    ModelCount: 10
+    SameUnitCount: 1
+    ISv:
+      Value: 
+      Type: 0
+    Sprite: {fileID: 0}
+    Categories:
+    - 'Faction: Necrons'
+    - Infantry
+    - Battleline
+    - Immortals
+    Rules:
+    - Power Matrix
+    - Reanimation Protocols
+    Abilities:
+    - Name: Implacable Eradication
+      Ability: "Each time a model in this unit makes\_an attack, re-roll a Wound
+        roll of 1. If the target of that attack\_is an enemy unit within range of
+        an objective marker, you can\_re-roll the Wound roll instead."
+    Weapons:
+    - Name: Close combat weapon
+      Range: Melee
+      A: 2
+      Sk: 3+
+      S: 4
+      AP: 0
+      D: 1
+      Type: 0
+      Keywords:
+      - '-'
+    - Name: Gauss blaster
+      Range: 24"
+      A: 2
+      Sk: 3+
+      S: 5
+      AP: -1
+      D: 1
+      Type: 1
+      Keywords:
+      - Lethal Hits
+  - Model:
+      Name: Necron Warriors
+      M: 5"
+      T: 4
+      Sv: 4+
+      W: 1
+      Ld: 7+
+      OC: 2
+    ModelCount: 20
+    SameUnitCount: 1
+    ISv:
+      Value: 
+      Type: 0
+    Sprite: {fileID: 0}
+    Categories:
+    - 'Faction: Necrons'
+    - Infantry
+    - Battleline
+    - Necron Warriors
+    Rules:
+    - Power Matrix
+    - Reanimation Protocols
+    Abilities:
+    - Name: Their Number is Legion
+      Ability: "Each time this unit\u2019s Reanimation\_Protocols activate, you can
+        re-roll the dice to see how many wounds are regenerated."
+    Weapons:
+    - Name: Gauss flayer
+      Range: 24"
+      A: 1
+      Sk: 4+
+      S: 4
+      AP: 0
+      D: 1
+      Type: 1
+      Keywords:
+      - Lethal Hits
+      - Rapid Fire 1
+    - Name: Close combat weapon
+      Range: Melee
+      A: 1
+      Sk: 4+
+      S: 4
+      AP: 0
+      D: 1
+      Type: 0
+      Keywords:
+      - '-'
+  - Model:
+      Name: Lokhust Destroyers
+      M: 8"
+      T: 6
+      Sv: 3+
+      W: 3
+      Ld: 7+
+      OC: 2
+    ModelCount: 1
+    SameUnitCount: 3
+    ISv:
+      Value: 
+      Type: 0
+    Sprite: {fileID: 0}
+    Categories:
+    - 'Faction: Necrons'
+    - Mounted
+    - Fly
+    - Destroyer Cult
+    - Lokhust Destroyers
+    Rules:
+    - Power Matrix
+    - Reanimation Protocols
+    Abilities:
+    - Name: Hard-wired for Destruction
+      Ability: "Each time a model in this unit\_makes a ranged attack that targets
+        the closest eligible enemy unit,\_re-roll a Hit roll of 1. If the target
+        of that attack is within range of an objective marker your opponent controls,
+        you can re-roll the Hit roll instead."
+    Weapons:
+    - Name: Gauss cannon
+      Range: 24"
+      A: 3
+      Sk: 3+
+      S: 5
+      AP: -2
+      D: 2
+      Type: 1
+      Keywords:
+      - Lethal Hits
+    - Name: Close combat weapon
+      Range: Melee
+      A: 2
+      Sk: 3+
+      S: 4
+      AP: 0
+      D: 1
+      Type: 0
+      Keywords:
+      - '-'
+  - Model:
+      Name: Canoptek Wraiths
+      M: 10"
+      T: 6
+      Sv: 3+
+      W: 4
+      Ld: 8+
+      OC: 2
+    ModelCount: 6
+    SameUnitCount: 1
+    ISv:
+      Value: 4+
+      Type: 0
+    Sprite: {fileID: 0}
+    Categories:
+    - 'Faction: Necrons'
+    - Beast
+    - Fly
+    - Canoptek
+    - Wraiths
+    Rules:
+    - Power Matrix
+    - Reanimation Protocols
+    Abilities:
+    - Name: Wraith Form
+      Ability: "Each time this unit ends a Normal move, you can\_select one enemy
+        unit it moved over during that move and roll\_one D6 for each model in this
+        unit: for each 4+, that enemy\_unit suffers 1 mortal wound."
+    - Name: Invulnerable Save
+      Ability: Models in this unit have a 4+ invulnerable save.
+    Weapons:
+    - Name: Particle caster
+      Range: 12"
+      A: 3
+      Sk: 4+
+      S: 5
+      AP: 0
+      D: 1
+      Type: 1
+      Keywords:
+      - Devastating Wounds
+      - Pistol
+    - Name: Whip coils
+      Range: Melee
+      A: 8
+      Sk: 4+
+      S: 5
+      AP: 0
+      D: 1
+      Type: 0
+      Keywords:
+      - '-'
+  - Model:
+      Name: Canoptek Doomstalker
+      M: 8"
+      T: 8
+      Sv: 3+
+      W: 12
+      Ld: 8+
+      OC: 4
+    ModelCount: 1
+    SameUnitCount: 3
+    ISv:
+      Value: 4+
+      Type: 0
+    Sprite: {fileID: 0}
+    Categories:
+    - 'Faction: Necrons'
+    - Vehicle
+    - Walker
+    - Canoptek
+    - Doomstalker
+    Rules:
+    - Power Matrix
+    - Reanimation Protocols
+    - Deadly Demise D3
+    Abilities:
+    - Name: 'Damaged: 1-4 wounds remaining'
+      Ability: "While this model has 1-4 wounds remaining, each time this\_model
+        makes an attack, subtract 1 from the Hit roll."
+    - Name: Sentinel Construct
+      Ability: "Each time you target this unit with the\_Fire Overwatch Stratagem,
+        while resolving that Stratagem, hits\_are scored on unmodified Hit rolls
+        of 5+."
+    - Name: Invulnerable Save
+      Ability: This model has a 4+ invulnerable save.
+    Weapons:
+    - Name: Doomsday blaster
+      Range: 48"
+      A: D6+1
+      Sk: 4+
+      S: 14
+      AP: -3
+      D: 3
+      Type: 1
+      Keywords:
+      - Blast
+      - Heavy
+    - Name: Twin gauss flayer
+      Range: 24"
+      A: 1
+      Sk: 4+
+      S: 4
+      AP: 0
+      D: 1
+      Type: 1
+      Keywords:
+      - Lethal Hits
+      - Rapid Fire 1
+      - Twin-linked
+    - Name: Doomstalker limbs
+      Range: Melee
+      A: 3
+      Sk: 4+
+      S: 6
+      AP: 0
+      D: 1
+      Type: 0
+      Keywords:
+      - '-'
+  - Model:
+      Name: Canoptek Reanimator
+      M: 8"
+      T: 6
+      Sv: 3+
+      W: 6
+      Ld: 8+
+      OC: 3
+    ModelCount: 1
+    SameUnitCount: 2
+    ISv:
+      Value: 
+      Type: 0
+    Sprite: {fileID: 0}
+    Categories:
+    - 'Faction: Necrons'
+    - Vehicle
+    - Walker
+    - Canoptek
+    - Reanimator
+    Rules:
+    - Power Matrix
+    - Reanimation Protocols
+    - Feel No Pain 4+
+    Abilities:
+    - Name: Nanoscarab Reanimation Beam (Aura)
+      Ability: "While a friendly\_NECRONS unit is within 3\" of this model, each
+        time that\_unit\u2019s Reanimation Protocols activate, that unit reanimates
+        an\_additional D3 wounds."
+    Weapons:
+    - Name: 2x Atomiser beam
+      Range: 12"
+      A: 3
+      Sk: 4+
+      S: 6
+      AP: -2
+      D: 1
+      Type: 1
+      Keywords:
+      - '-'
+    - Name: Reanimator's claws
+      Range: Melee
+      A: 4
+      Sk: 4+
+      S: 5
+      AP: 0
+      D: 1
+      Type: 0
+      Keywords:
+      - '-'
+  StratagemsDefaultData:
+    Name: DEFAULT
+    StratagemsData:
+    - Name: COMMAND RE-ROLL
+      Type: 0
+      Icons: 0000000003000000
+      CP: 1
+      When: In any phase, just after you have made a Hit roll, a Wound roll, a Damage
+        roll, a saving throw, an Advance roll, a Charge roll, a Desperate Escape
+        test, a Hazardous test, or just after you have rolled the dice to determine
+        the number of attacks made with a weapon, for an attack, model or unit from
+        your army.
+      Target: 
+      Effect: You re-roll that roll, test or saving throw.
+      Restrictions: 
+    - Name: COUNTER-OFFENSIVE
+      Type: 0
+      Icons: 0400000003000000
+      CP: 2
+      When: Fight phase, just after an enemy unit has fought.
+      Target: One unit from your army that is within Engagement Range of one or more
+        enemy units and that has not already been selected to fight this phase.
+      Effect: Your unit fights next.
+      Restrictions: 
+    - Name: EPIC CHALLENGE
+      Type: 0
+      Icons: 0400000003000000
+      CP: 1
+      When: Fight phase, when a CHARACTER unit from your army that is within Engagement
+        Range of one or more Attached units is selected to fight.
+      Target: One CHARACTER model in your unit.
+      Effect: Until the end of the phase, all melee attacks made by that model have
+        the [PRECISION] ability.
+      Restrictions: 
+    - Name: INSANE BRAVERY
+      Type: 1
+      Icons: 0200000003000000
+      CP: 1
+      When: Battle-shock step of your Command phase, just before you take a Battle-shock
+        test for a unit from your army.
+      Target: A unit from your army that must take a Battle-shock test.
+      Effect: Your unit automatically passes that Battle-shock test.
+      Restrictions: You cannot use this Stratagem more than once per battle.
+    - Name: GRENADE
+      Type: 1
+      Icons: 0600000003000000
+      CP: 1
+      When: Your Shooting phase.
+      Target: One GRENADES unit from your army that is not within Engagement Range
+        of any enemy units and has not been selected to shoot this phase.
+      Effect: 'Select one enemy unit that is not within Engagement Range of any units
+        from your army and is within 8" of and visible to your GRENADES unit. Roll
+        six D6: for each 4+, that enemy unit suffers 1 mortal wound.'
+      Restrictions: 
+    - Name: TANK SHOCK
+      Type: 1
+      Icons: 0100000003000000
+      CP: 1
+      When: Your Charge phase.
+      Target: One VEHICLE unit from your army.
+      Effect: "Until the end of the phase, after your unit ends a Charge move, select
+        one enemy unit within Engagement Range of it, then select one melee weapon
+        your unit is equipped with. Roll a number of D6 equal to that weapon\u2019s
+        Strength characteristic. If that Strength characteristic is greater than
+        that enemy unit\u2019s Toughness characteristic, roll two additional D6.
+        For each 5+, that enemy unit suffers 1 mortal wound (to a maximum of 6 mortal
+        wounds)."
+      Restrictions: 
+    - Name: RAPID INGRESS
+      Type: 2
+      Icons: 0500000003000000
+      CP: 1
+      When: "End of your opponent\u2019s Movement phase."
+      Target: One unit from your army that is in Reserves.
+      Effect: Your unit can arrive on the battlefield as if it were the Reinforcements
+        step of your Movement phase.
+      Restrictions: You cannot use this Stratagem to enable a unit to arrive on the
+        battlefield during a battle round it would not normally be able to do so
+        in.
+    - Name: FIRE OVERWATCH
+      Type: 2
+      Icons: 0500000003000000
+      CP: 1
+      When: "Your opponent\u2019s Movement or Charge phase, just after an enemy unit
+        is set up or when an enemy unit starts or ends a Normal, Advance, Fall Back
+        or Charge move."
+      Target: One unit from your army that is within 24" of that enemy unit and that
+        would be eligible to shoot if it were your Shooting phase.
+      Effect: If that enemy unit is visible to your unit, your unit can shoot that
+        enemy unit as if it were your Shooting phase.
+      Restrictions: "You cannot target a TITANIC unit with this Stratagem. Until
+        the end of the phase, each time a model in your unit makes a ranged attack,
+        an unmodified Hit roll of 6 is required to score a hit, irrespective of the
+        attacking weapon\u2019s Ballistic Skill or any modifiers. You can only use
+        this Stratagem once per turn."
+    - Name: GO TO GROUND
+      Type: 2
+      Icons: 0600000003000000
+      CP: 1
+      When: "Your opponent\u2019s Shooting phase, just after an enemy unit has selected
+        its targets."
+      Target: "One INFANTRY unit from your army that was selected as the target of
+        one or more of the attacking unit\u2019s attacks."
+      Effect: Until the end of the phase, all models in your unit have a 6+ invulnerable
+        save and have the Benefit of Cover.
+      Restrictions: 
+    - Name: SMOKESCREEN
+      Type: 2
+      Icons: 0600000003000000
+      CP: 1
+      When: "Your opponent\u2019s Shooting phase, just after an enemy unit has selected
+        its targets."
+      Target: "One SMOKE unit from your army that was selected as the target of one
+        or more of the attacking unit\u2019s attacks."
+      Effect: Until the end of the phase, all models in your unit have the Benefit
+        of Cover and the Stealth ability.
+      Restrictions: 
+    - Name: HEROIC INTERVENTION
+      Type: 2
+      Icons: 0500000003000000
+      CP: 2
+      When: "Your opponent\u2019s Charge phase, just after an enemy unit ends a Charge
+        move."
+      Target: One unit from your army that is within 6" of that enemy unit and would
+        be eligible to declare a charge against that enemy unit if it were your Charge
+        phase.
+      Effect: Your unit now declares a charge that targets only that enemy unit,
+        and you resolve that charge as if it were your Charge phase.
+      Restrictions: You can only select a VEHICLE unit from your army if it is a
+        WALKER. Note that even if this charge is successful, your unit does not receive
+        any Charge bonus this turn.
+  StratagemsTeamData:
+    Name: CANOPTEK COURT
+    StratagemsData:
+    - Name: CURSE OF THE CRYPTEK
+      Type: 0
+      Icons: 060000000400000003000000
+      CP: 1
+      When: "Your opponent\u2019s Shooting phase or the Fight phase, just after an
+        enemy unit has shot or fought."
+      Target: "One CYPTEK model from your army that was destroyed by one of the attacking
+        unit\u2019s attacks. You can use this Stratagem on that model even though
+        it was just destroyed."
+      Effect: Until the end of the battle, each time a friendly CNOPTEK model makes
+        an attack that targets the attacking unit, add 1 to the Hit roll and add
+        1 to the Wound roll.
+      Restrictions: 
+    - Name: CYNOSURE OF ERADICATION
+      Type: 0
+      Icons: 060000000400000003000000
+      CP: 2
+      When: The start of your Shooting phase or the start of the Fight phase.
+      Target: "One CYPTEK or CNOPTEK unit from your army that is wholly within your
+        army\u2019s Power Matrix."
+      Effect: Until the end of the phase, weapons equipped by CYPTEK or CNOPTEK models
+        in your unit have the [DEVASTATING WOUNDS] ability.
+      Restrictions: 
+    - Name: SOLAR PULSE
+      Type: 1
+      Icons: 0600000003000000
+      CP: 1
+      When: Start of your Shooting phase.
+      Target: One CYPTEK model from your army.
+      Effect: Select one objective marker within 18" of your CYPTEK model. Until
+        the end of the phase, weapons equipped by friendly NCRONS models have the
+        [IGNORES COVER] ability while targeting units within range of that objective
+        marker.
+      Restrictions: 
+    - Name: REACTIVE SUBROUTINES
+      Type: 2
+      Icons: 0500000003000000
+      CP: 1
+      When: "Your opponent\u2019s Movement phase, just after an enemy unit ends a
+        Normal, Advance or Fall Back move."
+      Target: One CNOPTEK unit from your army that is within 9" of that enemy unit.
+      Effect: Your unit can make a Normal move of up to 6".
+      Restrictions: 
+    - Name: COUNTERTEMPORAL SHIFT
+      Type: 2
+      Icons: 0600000003000000
+      CP: 1
+      When: "Your opponent\u2019s Shooting phase, just after an enemy unit has selected
+        its targets."
+      Target: "One CNOPTEK unit from your army that was selected as the target of
+        one or more of the attacking unit\u2019s attacks."
+      Effect: Until the end of the phase, your unit can only be selected as the target
+        of a ranged attack if the attacking model is within 18".
+      Restrictions: 
+    - Name: SUBOPTIMAL FACADE
+      Type: 2
+      Icons: 0100000003000000
+      CP: 1
+      When: "Your opponent\u2019s Charge phase, just after an enemy unit has declared
+        a charge."
+      Target: "One CNOPTEK unit from your army that was selected as a target of that
+        charge and is wholly within your army\u2019s Power Matrix."
+      Effect: "Your unit\u2019s Reanimation Protocols activate."
+      Restrictions: 

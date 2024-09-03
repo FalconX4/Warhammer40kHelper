@@ -1,0 +1,213 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d8074a4f54cb364aa30071856c99ac8, type: 3}
+  m_Name: RulesData
+  m_EditorClassIdentifier: 
+  Rules:
+  - Name: Power Matrix
+    Rule: 'Certain areas of the battlefield are considered to be within your army''s
+      Power Matrix, as follows:
+
+      - Your deployment zone is always within your
+      army''s Power Matrix.
+
+      - At the start of any phase, if you control at
+      least half of the objective markers within No Man''s Land, until the end of
+      that phase, No Man''s Land is within your army''s Power Matrix.
+
+      - At
+      the start of any phase, if you control at least half of the objective markers
+      within your opponent''s deployment zone, until the end of that phase, your
+      opponent''s deployment zone is within your army''s Power Matrix.
+
+      Each
+      time a model in a CRYPTEK or CANOPTEK unit from your army makes an attack,
+      re-roll a Hit roll of 1. If such a unit is wholly within your Power Matrix,
+      you can re-roll the Hit roll instead.'
+  - Name: Reanimation Protocols
+    Rule: "If your Army Faction is NECRONS, at the end of your\_Command phase, each
+      unit from your army with this\_ability that is on the battlefield activates
+      its Reanimation Protocols and reanimates\_D3 wounds. Each time such a unit
+      reanimates a wound:\n\u25A0 If that unit contains one or more models with fewer\_than
+      their starting number of wounds remaining,\_select one of those models; that
+      model regains one\_lost wound.\n\u25A0 If all models in that unit have their
+      starting number of\_wounds, but that unit is not at its Starting Strength,\_one
+      destroyed model is returned to that unit with one\_wound remaining.\nOnce such
+      a unit is at its Starting Strength and all of its\_models have their starting
+      number of wounds, nothing\_further happens."
+  - Name: Feel No Pain 4+
+    Rule: 'Some models have ''Feel No Pain x+'' listed in their abilities. Each time
+      a model with this ability suffers damage and so would lose a wound (including
+      wounds lost due to mortal wounds), roll one D6: if the result is greater than
+      or equal to the number denoted by ''x: that wound is ignored and is not lost.
+      If a model has more than one Feel No Pain ability, you can only use one of
+      those abilities each time that model suffers damage and so would lose a wound.'
+  - Name: Extra Attacks
+    Rule: Weapons with [EXTRA ATTACKS] in their profile are known as Extra Attacks
+      weapons. Each time the bearer of such a weapon fights, it can make attacks
+      with that weapon in addition to the one it chooses to fight with. The number
+      of attacks made with an Extra Attacks weapon cannot be modified by other rules.
+  - Name: Leader
+    Rule: While a Bodyguard unit contains a Leader, it is known as an Attached unit
+      and, with the exception of rules that are triggered when units are destroyed
+      (pg 12), it is treated as a single unit for all rules purposes. Each time an
+      attack targets an Attached unit, until the attacking unit has resolved all
+      of its attacks, you must use the Toughness characteristic of the Bodyguard
+      models in that unit, even if a Leader in that unit has a different Toughness
+      characteristic. Each time an attack sucessfully wounds an Attached unit, that
+      attack cannot be allocated to a Character model in that unit, even if that
+      Character model has lost one or more wounds or has already had attacks allocated
+      to it this phase. As soon as the last Bodyguard model in an Attached unit has
+      been destroyed, any attacks made against that unit that have yet to be allocated
+      can then be allocated to Character models in that unit.
+  - Name: Ignores Cover
+    Rule: Weapons with [IGNORES COVER] in their profile are known as Ignores Cover
+      weapons. Each time an attack is made with such a weapon, the target cannot
+      have the Benefit of Cover against that attack.
+  - Name: Torrent
+    Rule: Weapons with [TORRENT] in their profile are known as Torrent weapons. Each
+      time an attack is made with such a weapon, that attack automatically hits the
+      target.
+  - Name: Devastating Wounds
+    Rule: "Weapons with [DEVASTATING WOUNDS] in their profile\_are known as Devastating
+      Wounds weapons. Each\_time an attack is made with such a weapon, if that\_attack
+      scores a Critical Wound, no saving throw of\_any kind can be made against that
+      attack (including\_invulnerable saving throws). Such attacks are only\_allocated
+      to models after all other attacks made by\_the attacking unit have been allocated
+      and resolved"
+  - Name: Blast
+    Rule: "Weapons with [BLAST] in their profile are known as Blast weapons, and
+      they make a random number of attacks. Each time you determine how many attacks
+      are made with a Blast weapon, add 1 to the result for every five models that
+      were in the target unit when you selected it as the target (rounding down).
+      Blast weapons can never be used to make attacks against a unit that is within
+      Engagement Range of one or more units from the attacking model\u2019s army
+      (including its own unit)."
+  - Name: Lethal Hits
+    Rule: Weapons with [LETHAL HITS] in their profile are known as Lethal Hits weapons.
+      Each time an attack is made with such a weapon, a Critical Hit automatically
+      wounds the target.
+  - Name: Rapid Fire
+    Rule: "Weapons with [RAPID FIRE X] in their profile are known as Rapid Fire weapons.
+      Each time such a weapon targets a unit within half that weapon\u2019s range,
+      the Attacks characteristic of that weapon is increased by the amount denoted
+      by \u2018x\u2019."
+  - Name: Assault
+    Rule: "Weapons with [ASSAULT] in their profile are known as Assault weapons.
+      If a unit that Advanced this turn contains any models equipped with Assault
+      weapons, it is still eligible to shoot in this turn\u2019s Shooting phase.
+      When such a unit is selected to shoot, you can only resolve attacks using Assault
+      weapons its models are equipped with."
+  - Name: Sustained Hits
+    Rule: "Weapons with [SUSTAINED HITS X] in their profile are known as Sustained
+      Hits weapons. Each time an attack is made with such a weapon, if a Critical
+      Hit is rolled, that attack scores a number of additional hits on the target
+      as denoted by \u2018x\u2019"
+  - Name: Pistol
+    Rule: "Weapons with [PISTOL] in their profile are known as Pistols. If a unit
+      contains any models equipped with Pistols, that unit is eligible to shoot in
+      its controlling player\u2019s Shooting phase even while it is within Engagement
+      Range of one or more enemy units. When such a unit is selected to shoot, it
+      can only resolve attacks using its Pistols and can only target one of the enemy
+      units it is within Engagement Range of. In such circumstances, a Pistol can
+      target an enemy unit even if other friendly units are within Engagement Range
+      of the same enemy unit.\_\n\nIf a model is equipped with one or more Pistols,
+      unless it is a MONSTER or VEHICLE model, it can either shoot with its Pistols
+      or with all of its other ranged weapons. Declare whether such a model will
+      shoot with its Pistols or its other ranged weapons before selecting targets."
+  - Name: Deadly Demise D3
+    Rule: Some models have 'Deadly Demise x' listed in their abilities. When such
+      a model is destroyed, roll one D6 before removing it from play (if such a model
+      is a TRANSPORT, roll before any embarked models disembark). On a 6, each unit
+      within 6" of that model suffers a number of mortal wounds denoted by 'x' (if
+      this is a random number, roll separately for each unit within 6").
+  - Name: Heavy
+    Rule: "Weapons with [HEAVY] in their profile are known as Heavy weapons. Each
+      time an attack is made with such a weapon, if the attacking model\u2019s unit
+      Remained Stationary this turn, add 1 to that attack\u2019s Hit roll."
+  - Name: Twin-linked
+    Rule: "Weapons with [TWIN-LINKED] in their profile are known as Twin-linked weapons.
+      Each time an attack is made with such a weapon, you can re-roll that attack\u2019s
+      Wound roll."
+  - Name: Unparalleled Foresight
+    Rule: "Each time an Aeldari unit from your army is\_selected to shoot or fight,
+      you can re-roll one Hit roll\_and you can re-roll one Wound roll when resolving\_those
+      attacks"
+  - Name: Strands of Fate
+    Rule: "If your Army Faction is AELDARI, at the start of the\_battle, make a Strands
+      of Fate roll by rolling six D6.\_\n\n\nIf you wish, you can then re-roll all
+      of these dice, but\_if you do, roll one less D6. You can continue re-rolling\_all
+      of the dice in this manner, rolling one less D6 each\_time you do, until you
+      are satisfied with the results\_rolled (or until you only have a single D6
+      remaining).\n\n\nWhen you are satisfied with the results rolled, those\_remaining
+      dice become your Fate dice for the battle.\_These results cannot be changed
+      or re-rolled further,\_unless a rule specifically states otherwise. Keep your\_Fate
+      dice to one side \u2013 this is your Fate dice pool.\n\n\nOnce per phase, before
+      making a dice roll for a model\_or unit from your army with the Strands of
+      Fate ability,\_if you have one or more dice in your Fate dice pool,\_you can
+      use one of those Fate dice. To do so, select\_one of those Fate dice to substitute
+      that dice roll. The\_dice that is being substituted is not rolled; instead,\_the
+      value of the selected Fate dice is used as if it had\_been rolled (this counts
+      as an unmodified dice roll\_of that value for all rules purposes). Each Fate
+      dice\_can only be used in this way once. After using a Fate\_dice, remove it
+      from your Fate dice pool and roll all\_remaining dice that are part of that
+      dice roll (if any).\_You can use Fate dice for any of the following types\_of
+      dice roll:\n\u25A0 Advance roll\n\u25A0 Battle-shock test\n\u25A0 Charge roll\n\u25A0
+      Damage roll\n\u25A0 Hit roll\n\u25A0 Saving throw\n\u25A0 Wound roll"
+  - Name: Lone Operative
+    Rule: Unless part of an Attached unit, this unit can only be selected as the
+      target of a ranged attack if the attacking model is within 12".
+  - Name: Deep Strike
+    Rule: During the Declare Battle Formations step, if every model in a unit has
+      this ability, you can set it up in Reserves instead of setting it up on the
+      battlefield. If you do, in the Reinforcements step of one of your Movement
+      phases you can set up this unit anywhere on the battlefield that is more than
+      9" horizontally away from all enemy models.
+  - Name: Melta
+    Rule: "Weapons with [MELTA X] in their profile are known as Melta weapons. Each
+      time an attack made with such a weapon targets a unit within half that weapon\u2019s
+      range, that attack\u2019s Damage characteristic is increased by the amount
+      denoted by \u2018x\u2019."
+  - Name: Psychic
+    Rule: Some weapons and abilities can only be used by PSYKERS. Such weapons and
+      abilities are tagged with the word 'Psychic'. If a Psychic weapon or ability
+      causes any unit to suffer one or more wounds, each of those wounds is considered
+      to have been inflicted by a Psychic Attack.
+  - Name: Infiltrators
+    Rule: During deployment, if every model in a unit has this ability, then when
+      you set it up, it can be set up anywhere on the battlefield that is more than
+      9" horizontally away from the enemy deployment zone and all enemy models.
+  - Name: Stealth
+    Rule: "If every model in a unit has this ability, then each time a ranged attack
+      is made against it, subtract 1 from that attack\u2019s Hit roll."
+  - Name: Precision
+    Rule: "Weapons with [PRECISION] in their profile are known as Precision weapons.
+      Each time an attack made with such a weapon successfully wounds an Attached
+      unit, if a Character model in that unit is visible to the attacking model,
+      the attacking model\u2019s player can choose to have that attack allocated
+      to that Character model instead of following the normal attack sequence."
+  - Name: Scouts 9"
+    Rule: "Some units have \u2018Scouts x\u2019 listed in their abilities. If every
+      model in a unit has this ability, then at the start of the first battle round,
+      before the first turn begins, it can make a Normal move of up to x\" as if
+      it were your Movement phase \u2013 as can any DEDICATED TRANSPORT model such
+      a unit starts the battle embarked within (provided only models with this ability
+      are embarked within that DEDICATED TRANSPORT model). A unit that moves using
+      this ability must end that move more than 9\\\" horizontally away from all
+      enemy models. If both players have units that can do this, the player who is
+      taking the first turn moves their units first."
+  - Name: Deadly Demise 1
+    Rule: Some models have 'Deadly Demise x' listed in their abilities. When such
+      a model is destroyed, roll one D6 before removing it from play (if such a model
+      is a TRANSPORT, roll before any embarked models disembark). On a 6, each unit
+      within 6" of that model suffers a number of mortal wounds denoted by 'x' (if
+      this is a random number, roll separately for each unit within 6").

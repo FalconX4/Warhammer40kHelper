@@ -1,0 +1,48 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d28cd52f1fd52446950b1c625217f21, type: 3}
+  m_Name: RewrittenWeaponsData
+  m_EditorClassIdentifier: 
+  NameDescription:
+  - Name: Anti-
+    Description: Type ? WR x+ = CW
+  - Name: Assault
+    Description: If Avanced, can still shoot this
+  - Name: Blast
+    Description: A += models / 5
+  - Name: Devastating Wounds
+    Description: CW = No Sv
+  - Name: Hazardous
+    Description: 'After shoot, D6 = 1 ? character ? 3 MW : Destroy'
+  - Name: Heavy
+    Description: No move = +1 HR
+  - Name: Lethal Hits
+    Description: CH = W
+  - Name: Melta
+    Description: Half range? D += x
+  - Name: Pistol
+    Description: Can shoot while engaged to engaged unit. Monster or Vehicle can
+      shoot both pistol and other weapons, others has to choose.
+  - Name: Precision
+    Description: Atk Attached Unit ? Can choose CHARACTER to wound
+  - Name: Rapid Fire
+    Description: Range/2 ? A += x
+  - Name: Sustained Hits
+    Description: CH ? H += x
+  - Name: Stealth
+    Description: Atked? HR - 1
+  - Name: Torrent
+    Description: H
+  - Name: Twin-linked
+    Description: Reroll WR
+  - Name: Psychic
+    Description: Damage considered as Psychic Damage

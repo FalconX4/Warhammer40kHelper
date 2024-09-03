@@ -1,0 +1,143 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d28cd52f1fd52446950b1c625217f21, type: 3}
+  m_Name: RewrittenAbilitiesData
+  m_EditorClassIdentifier: 
+  NameDescription:
+  - Name: Atomic Energy Manipulator
+    Description: Melee kill model, +3" Mechanical Augmentation (max 12")
+  - Name: 'Damaged: 1-5 wounds remaining'
+    Description: -1 HR
+  - Name: 'Damaged: 1-5 Wounds Remaining'
+    Description: -1 HR
+  - Name: Grand Strategist
+    Description: Command, +1CP
+  - Name: Guardian Protocols
+    Description: NOBLE Led? atked? S > T? WR-1
+  - Name: Harbinger of Destruction
+    Description: Lead? Range HR 5+ = CH
+  - Name: Illuminor
+    Description: 3" allies? Targeted only if < 12"
+  - Name: Implacable Eradication
+    Description: Reroll WR 1. Target range objective marker, reroll WR
+  - Name: Living Lightning
+    Description: 'Shooting 1 at 18" 4D6: each 4+ = 1 MW'
+  - Name: Lord of the Storm
+    Description: 'Only once, Command, 12" D6 = 2-5 ? D3 MW : 6 ? D3+3 MW'
+  - Name: Matter Absorption
+    Description: Shooting, 1 VEHICLE 12" D6 = 2+ ? D3 MW lifesteal.
+  - Name: Mechanical Augmentation (Aura)
+    Description: 3" allies BATTLELINE atk = AP+1, atked = AP-1
+  - Name: Nanoscarab Reanimation Beam (Aura)
+    Description: Allies 3", Reanimation Protocols = +D3 heal
+  - Name: Necrodermis
+    Description: D/2
+  - Name: Overwhelming Obliteration
+    Description: Not moved ? CW = No Sv
+  - Name: Drain Life
+    Description: End fight phase, each enemy 6", d6 = 4+? D3 MW
+  - Name: Chittering Swarm
+    Description: Enemy in engagement -1 OC. 6" cryptek? +1 OC
+  - Name: Self-destruction
+    Description: Start fight phase, in engagement, destroy one of this model? d6
+      (+1 if vehicle) = 2-5? D3 MW, = 6+? 3 MW
+  - Name: Wraith Form
+    Description: End normal move, moved over enemy? model count D6 = 4+? 1MW
+  - Name: Hard-wired for Destruction
+    Description: Ranged closest? reroll HR 1. Target within objective too? reroll
+      all
+  - Name: Destroyer Cult
+    Description: Lead? model ranged? HR 5+ = CH
+  - Name: Driven by Hatred
+    Description: Target below half? reroll HR and WR
+  - Name: Nether-real Casket
+    Description: lead? -1 HR against it
+  - Name: Resurrection orb
+    Description: Once, lead? end any phase? resurrect unit. Heal D6 W
+  - Name: Rites of Reanimation
+    Description: Lead? After save, D6 >= 5 ? no W
+  - Name: Technomancer
+    Description: End movement phase, one 6" model heal D3 W
+  - Name: Leader
+    Description: 
+  - Name: Invulnerable Save (Autarch)
+    Description: 
+  - Name: Howling Banshee Mask
+    Description: 
+  - Name: Path of Command
+    Description: Command, +1CP
+  - Name: Superlative Strategist
+    Description: Once per turn, Used Stratagem can still be used on him
+  - Name: Molten Form
+    Description: D/2
+  - Name: The Bloody Handed (Aura)
+    Description: +1 advance and charge to 6" ally
+  - Name: Inescapable Accuracy
+    Description: Range, ignore modifiers to BS and HR
+  - Name: Cruel Amusement
+    Description: Shooting phase, apply either ignore cover, can hit leader or +3
+      hit on CH
+  - Name: Death is Not Enough
+    Description: Your Shooting phase, after shot destroy model? Battle-shock
+  - Name: Fate's Messenger
+    Description: Once per turn, after HR, WR or Save, auto 6
+  - Name: Branching Fates (psychic)
+    Description: Once per turn, use Fate within 12"? Dice = 6
+  - Name: Fortune (Psychic)
+    Description: Command phase, D6 = 2+? one 12" ally get -1 WR agaisnt
+  - Name: Invulnerable Save (Farseer)
+    Description: 
+  - Name: The Phoenix Gem
+    Description: First Death? D6 = 2+? End of phase revive
+  - Name: Defenders of Fate
+    Description: End Command phase, control objective? +1D6 Fate
+  - Name: Guardian Defenders
+    Description: All Guardian Defenders dead = Heavy Weapon Platform dead
+  - Name: Face of Death
+    Description: Target Below Half? reroll HR and WR
+  - Name: Harvester of Souls
+    Description: Lead? +1 HR
+  - Name: Invulnerable Save (Phoenix Lord)
+    Description: 
+  - Name: Target Acquisition
+    Description: Start shooting phase, one 12" enemy gets hits with CH = No WR
+  - Name: Power Field
+    Description: -1 WR agaisnt range
+  - Name: Assured Destruction
+    Description: Ranged Target Monster-Vehicle = reroll WR and DR 1
+  - Name: Path of the Outcast
+    Description: Once per turn, Enemy end Move within 9", normal move this unit of
+      D6"
+  - Name: Skyleap
+    Description: End opponent turn, can remove this unit to Strategic Reserve
+  - Name: Invulnerable Save (Warlock)
+    Description: 
+  - Name: Runes of Battle (Psychic)
+    Description: Command, choose Stealth or Ignore Cover
+  - Name: Swift Demise
+    Description: Ranged closest = reroll HR 1. Ranged objective marker = reroll HR
+  - Name: 'Damaged: 1-4 wounds remaining'
+    Description: -1 HR
+  - Name: Sentinel Construct
+    Description: Fire Overwatch ? HR 5+ instead
+  - Name: Their Number is Legion
+    Description: Reanimation Protocols ? reroll
+  - Name: Master Chronomancer
+    Description: Lead? 4+ ISv unit
+  - Name: The Stars Are Right
+    Description: Once per battle, start Fight phase, 3x A and S + success WR = CW
+  - Name: Metalodermal Tesla Weave
+    Description: 'Targeted charge ? D6 = 2-5 ? D3 MW : = 6 ? 3 MW'
+  - Name: Adaptive Strategy
+    Description: Fell back ? Can stll shoot or charge
+  - Name: Hyperphase Fulcrum
+    Description: lead ? within Power Matrix, reroll WR 1

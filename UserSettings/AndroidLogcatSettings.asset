@@ -1,0 +1,214 @@
+{
+    "m_SelectedDeviceId": "R38M700CJSM",
+    "m_SelectedProcess": {
+        "deviceId": "R38M700CJSM",
+        "name": "com.DefaultCompany.Warhammer40kHelper",
+        "processId": 18250,
+        "exited": false
+    },
+    "m_SelectedPriority": 0,
+    "m_KnownProcessesForSerialization": [
+        {
+            "deviceId": "R38M700CJSM",
+            "name": "com.sec.android.app.launcher",
+            "processId": 2587,
+            "exited": false
+        },
+        {
+            "deviceId": "R38M700CJSM",
+            "name": "com.DefaultCompany.Warhammer40kHelper",
+            "processId": 4969,
+            "exited": false
+        },
+        {
+            "deviceId": "R38M700CJSM",
+            "name": "com.DefaultCompany.Warhammer40kHelper",
+            "processId": 9389,
+            "exited": false
+        },
+        {
+            "deviceId": "R38M700CJSM",
+            "name": "com.DefaultCompany.Warhammer40kHelper",
+            "processId": 12315,
+            "exited": false
+        },
+        {
+            "deviceId": "R38M700CJSM",
+            "name": "com.DefaultCompany.Warhammer40kHelper",
+            "processId": 14139,
+            "exited": false
+        },
+        {
+            "deviceId": "R38M700CJSM",
+            "name": "com.DefaultCompany.Warhammer40kHelper",
+            "processId": 21834,
+            "exited": false
+        },
+        {
+            "deviceId": "R38M700CJSM",
+            "name": "com.DefaultCompany.Warhammer40kHelper",
+            "processId": 32269,
+            "exited": false
+        },
+        {
+            "deviceId": "R38M700CJSM",
+            "name": "com.DefaultCompany.Warhammer40kHelper",
+            "processId": 3095,
+            "exited": false
+        },
+        {
+            "deviceId": "R38M700CJSM",
+            "name": "com.DefaultCompany.Warhammer40kHelper",
+            "processId": 19082,
+            "exited": false
+        },
+        {
+            "deviceId": "R38M700CJSM",
+            "name": "com.DefaultCompany.Warhammer40kHelper",
+            "processId": 20182,
+            "exited": false
+        },
+        {
+            "deviceId": "R38M700CJSM",
+            "name": "com.DefaultCompany.Warhammer40kHelper",
+            "processId": 27008,
+            "exited": false
+        },
+        {
+            "deviceId": "R38M700CJSM",
+            "name": "com.DefaultCompany.Warhammer40kHelper",
+            "processId": 29032,
+            "exited": false
+        },
+        {
+            "deviceId": "R38M700CJSM",
+            "name": "com.DefaultCompany.Warhammer40kHelper",
+            "processId": 29633,
+            "exited": false
+        },
+        {
+            "deviceId": "R38M700CJSM",
+            "name": "com.DefaultCompany.Warhammer40kHelper",
+            "processId": 30766,
+            "exited": false
+        },
+        {
+            "deviceId": "R38M700CJSM",
+            "name": "com.DefaultCompany.Warhammer40kHelper",
+            "processId": 2925,
+            "exited": false
+        },
+        {
+            "deviceId": "R38M700CJSM",
+            "name": "com.DefaultCompany.Warhammer40kHelper",
+            "processId": 5929,
+            "exited": false
+        },
+        {
+            "deviceId": "R38M700CJSM",
+            "name": "com.DefaultCompany.Warhammer40kHelper",
+            "processId": 7842,
+            "exited": false
+        },
+        {
+            "deviceId": "R38M700CJSM",
+            "name": "com.DefaultCompany.Warhammer40kHelper",
+            "processId": 10007,
+            "exited": false
+        },
+        {
+            "deviceId": "R38M700CJSM",
+            "name": "com.DefaultCompany.Warhammer40kHelper",
+            "processId": 16381,
+            "exited": false
+        },
+        {
+            "deviceId": "R38M700CJSM",
+            "name": "com.DefaultCompany.Warhammer40kHelper",
+            "processId": 18250,
+            "exited": false
+        }
+    ],
+    "m_Tags": {
+        "m_Entries": [
+            {
+                "m_Name": "Filter by all listed tags",
+                "m_Selected": false
+            },
+            {
+                "m_Name": "No Filter",
+                "m_Selected": true
+            },
+            {
+                "m_Name": "",
+                "m_Selected": false
+            },
+            {
+                "m_Name": "Tag Control...",
+                "m_Selected": false
+            },
+            {
+                "m_Name": "",
+                "m_Selected": false
+            },
+            {
+                "m_Name": "Unity",
+                "m_Selected": false
+            },
+            {
+                "m_Name": "CRASH",
+                "m_Selected": false
+            }
+        ]
+    },
+    "m_ExtraWindowState": {
+        "Type": 0,
+        "Height": 0.0
+    },
+    "m_MemoryViewerState": {
+        "MemoryWindowWidth": 170.0,
+        "MemoryTypeEnabled": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+        ],
+        "MemoryGroup": 2,
+        "AutoCapture": true
+    },
+    "m_FilterOptions": {
+        "m_Filter": "",
+        "m_UseRegularExpressions": false,
+        "m_MatchCase": false
+    },
+    "m_SymbolPaths": [],
+    "m_CaptureVideoSettings": {
+        "TimeLimitEnabled": false,
+        "TimeLimit": 180,
+        "VideoSizeEnabled": false,
+        "VideoSizeX": 1280,
+        "VideoSizeY": 720,
+        "BitRateEnabled": false,
+        "BitRateK": 20000,
+        "DisplayIdEnabled": false,
+        "DisplayId": ""
+    },
+    "m_InputSettings": {
+        "ShiftModifier": false,
+        "SendText": "",
+        "PosixKillSignal": 0,
+        "TargetProcess": {
+            "deviceId": "",
+            "name": "",
+            "processId": 0,
+            "exited": false
+        }
+    },
+    "m_AutoScroll": 0
+}

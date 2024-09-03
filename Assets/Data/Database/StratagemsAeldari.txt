@@ -1,0 +1,63 @@
+BATTLE HOST
+{
+BLADESTORM
+<
+TYPE: 1
+ICONS: 6
+CP: 1
+WHEN: Your Shooting phase.
+TARGET: One AELDARI unit from your army that has not been selected to shoot this phase.
+EFFECT: Until the end of the phase, each time a model in your unit makes an attack, on a Critical Wound, improve the Armour Penetration characteristic of that attack by 2.
+RESTRICTIONS: 
+>
+LIGHTNING-FAST REACTIONS
+<
+TYPE: 0
+ICONS: 0
+CP: 1
+WHEN: Your opponent’s Shooting phase or the Fight phase, just after an enemy unit has selected its targets.
+TARGET: One AELDARI unit from your army (excluding WRAITH CONSTRUCT units) that was selected as the target of one or more of the attacking unit’s attacks.
+EFFECT: Until the end of the phase, each time an attack targets your unit, subtract 1 from the Hit roll.
+RESTRICTIONS: 
+>
+MATCHLESS AGILITY
+<
+TYPE: 1
+ICONS: 5
+CP: 1
+WHEN: Your Movement phase.
+TARGET: One AELDARI unit from your army that has not been selected to move this phase.
+EFFECT: Until the end of the phase, if your unit Advances, do not make an Advance roll for it. Instead, until the end of the phase, add 6" to the Move characteristic of models in your unit.
+RESTRICTIONS: 
+>
+PHANTASM
+<
+TYPE: 2
+ICONS: 5
+CP: 1
+WHEN: End of your opponent’s Movement phase.
+TARGET: One AELDARI INFANTRY unit from your army.
+EFFECT: Your unit can make a Normal move of up to D6". It cannot embark within a TRANSPORT at the end of this move.
+RESTRICTIONS: You cannot select a unit within Engagement Range of one or more enemy units, and until the end of the turn, you cannot target that unit with the Heroic Intervention Stratagem.
+>
+FEIGNED RETREAT
+<
+TYPE: 1
+ICONS: 5
+CP: 1
+WHEN: Your Movement phase, just after an AELDARI unit from your army makes a Fall Back move.
+TARGET: That AELDARI unit.
+EFFECT: Your unit is eligible to shoot and declare a charge this turn even though it Fell Back.
+RESTRICTIONS: 
+>
+FIRE AND FADE
+<
+TYPE: 1
+ICONS: 6
+CP: 2
+WHEN: End of your Shooting phase.
+TARGET: One AELDARI unit from your army.
+EFFECT: Your unit can make a Normal move. It cannot embark within a TRANSPORT at the end of this move.
+RESTRICTIONS: You cannot select an AIRCRAFT unit or a unit within Engagement Range of one or more enemy units, and until the end of the turn, the unit you selected is not eligible to declare a charge.
+>
+}

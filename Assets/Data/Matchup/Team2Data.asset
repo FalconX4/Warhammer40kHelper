@@ -1,0 +1,1219 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b4ab676f64cd0342abdeb201fa063f1, type: 3}
+  m_Name: Team2Data
+  m_EditorClassIdentifier: 
+  Race: Aeldari
+  Detachment: Battle Host
+  TeamData:
+  - Model:
+      Name: Avatar of Khaine
+      M: 10"
+      T: 12
+      Sv: 2+
+      W: 14
+      Ld: 6+
+      OC: 5
+    ModelCount: 1
+    SameUnitCount: 1
+    ISv:
+      Value: 4+
+      Type: 0
+    Sprite: {fileID: 0}
+    Categories:
+    - Daemon
+    - Epic Hero
+    - Character
+    - Monster
+    - Avatar of Khaine
+    - 'Faction: Aeldari'
+    Rules:
+    - Deadly Demise D3
+    - Strands of Fate
+    Abilities:
+    - Name: Molten Form
+      Ability: "Each time an attack is allocated to this model,\_halve the Damage
+        characteristic of that attack"
+    - Name: The Bloody Handed (Aura)
+      Ability: "While a friendly Aeldari unit\_is within 6\" of this model, add 1
+        to Advance and Charge rolls\_made for that unit."
+    - Name: 'Damaged: 1-5 Wounds Remaining'
+      Ability: While this model has 1-5 wounds remaining, each time this model makes
+        an attack, subtract 1 from the Hit roll.
+    - Name: Invulnerable Save
+      Ability: The Avatar of Khaine has a 4+ Invulnerable save
+    Weapons:
+    - Name: The Wailing Doom
+      Range: 12"
+      A: 1
+      Sk: 2+
+      S: 16
+      AP: -4
+      D: D6+2
+      Type: 1
+      Keywords:
+      - Sustained Hits D3
+    - Name: "\u27A4 The Wailing Doom - Strike"
+      Range: Melee
+      A: 6
+      Sk: 2+
+      S: 14
+      AP: -4
+      D: D6+2
+      Type: 0
+      Keywords:
+      - '-'
+    - Name: "\u27A4 The Wailing Doom - Sweep"
+      Range: Melee
+      A: 12
+      Sk: 2+
+      S: 7
+      AP: -2
+      D: 2
+      Type: 0
+      Keywords:
+      - '-'
+  - Model:
+      Name: Maugan Ra
+      M: 7"
+      T: 3
+      Sv: 2+
+      W: 5
+      Ld: 6+
+      OC: 1
+    ModelCount: 1
+    SameUnitCount: 1
+    ISv:
+      Value: 4+
+      Type: 0
+    Sprite: {fileID: 0}
+    Categories:
+    - Phoenix Lord
+    - Maugan Ra
+    - Infantry
+    - Epic Hero
+    - Character
+    - 'Faction: Aeldari'
+    Rules:
+    - Leader
+    - Strands of Fate
+    Abilities:
+    - Name: Leader
+      Ability: "This model can be attached to the following unit:\n\u25A0 Dark Reapers"
+    - Name: Invulnerable Save (Phoenix Lord)
+      Ability: Maugan Ra has a 4+ Invulnerable save
+    - Name: Harvester of Souls
+      Ability: "While this model is leading a unit, each\_time a model in that unit
+        makes an attack, add 1 to the Hit roll"
+    - Name: Face of Death
+      Ability: "Each time this model makes an attack that\_targets a unit that is
+        Below Half-strength, you can re-roll the\_Hit roll and you can re-roll the
+        Wound roll."
+    Weapons:
+    - Name: The Maugetar
+      Range: 36"
+      A: 6
+      Sk: 2+
+      S: 7
+      AP: -1
+      D: 2
+      Type: 1
+      Keywords:
+      - Devastating wounds
+      - Ignores cover
+    - Name: The Maugetar
+      Range: Melee
+      A: 5
+      Sk: 2+
+      S: 6
+      AP: -2
+      D: 2
+      Type: 0
+      Keywords:
+      - '-'
+  - Model:
+      Name: Autarch Wayleaper
+      M: 14"
+      T: 3
+      Sv: 3+
+      W: 4
+      Ld: 6+
+      OC: 1
+    ModelCount: 1
+    SameUnitCount: 1
+    ISv:
+      Value: 4+
+      Type: 0
+    Sprite: {fileID: 0}
+    Categories:
+    - Character
+    - Infantry
+    - Grenades
+    - Fly
+    - Autarch
+    - Autarch Wayleaper
+    - 'Faction: Aeldari'
+    Rules:
+    - Lone Operative
+    - Strands of Fate
+    - Deep Strike
+    Abilities:
+    - Name: Path of Command
+      Ability: "At the start of your Command phase, if this\_model is your Warlord
+        and is on the battlefield, you gain 1CP."
+    - Name: Invulnerable Save (Autarch)
+      Ability: An Autarch has a 4+ Invulnerable save
+    - Name: Indomitable Strength of Will (Aura)
+      Ability: "While a friendly Aeldari\_unit is within 6\" of this model, each
+        time that unit takes a\_Battle-shock or Leadership test, add 1 to that test."
+    - Name: Mandiblasters
+      Ability: "Melee weapons equipped by the bearer\_have the [DEVASTATING WOUNDS]
+        ability when targeting units\_without the Monster or Vehicle keywords"
+    Weapons:
+    - Name: Dragon Fusion Gun
+      Range: 12"
+      A: 1
+      Sk: 2+
+      S: 9
+      AP: -4
+      D: D6
+      Type: 1
+      Keywords:
+      - Assault
+      - Melta 3
+    - Name: Star Glaive
+      Range: Melee
+      A: 5
+      Sk: 3+
+      S: 6
+      AP: -2
+      D: 2
+      Type: 0
+      Keywords:
+      - '-'
+  - Model:
+      Name: Death Jester
+      M: 8"
+      T: 3
+      Sv: 6+
+      W: 4
+      Ld: 6+
+      OC: 1
+    ModelCount: 1
+    SameUnitCount: 1
+    ISv:
+      Value: 4+
+      Type: 0
+    Sprite: {fileID: 0}
+    Categories:
+    - Character
+    - Infantry
+    - Harlequins
+    - Death Jester
+    - 'Faction: Aeldari'
+    Rules:
+    - Lone Operative
+    - Strands of Fate
+    Abilities:
+    - Name: Death is Not Enough
+      Ability: "In your Shooting phase, after this model\_has shot, if one or more
+        of\_ those attacks destroyed an enemy\_model, that enemy model\u2019s unit
+        must take a Battle-shock test"
+    - Name: Cruel Amusement
+      Ability: "In your Shooting phase, one model from\_your army with this ability
+        can use it. If they do, until the end\_of the phase, select one of the following
+        abilities to apply to\_that model\u2019s shrieker cannon:\n\u25A0 [IGNORES
+        COVER]\n\u25A0 [PRECISION]\n\u25A0 [SUSTAINED HITS 3]"
+    - Name: Invulnerable Save
+      Ability: This unit has a 4+ Invulnerable save
+    - Name: Fate's Messenger
+      Ability: "Aeldari model only. Once per turn, just after making\_a Hit roll,
+        a Wound roll or a saving throw for the bearer, you can treat the result as
+        an\_unmodified roll of 6 instead."
+    Weapons:
+    - Name: Shrieker Cannon
+      Range: 24"
+      A: 3
+      Sk: 2+
+      S: 6
+      AP: -1
+      D: 2
+      Type: 1
+      Keywords:
+      - Devastating Wounds
+    - Name: Jester's Blade
+      Range: Melee
+      A: 4
+      Sk: 2+
+      S: 4
+      AP: 0
+      D: 1
+      Type: 0
+      Keywords:
+      - '-'
+  - Model:
+      Name: Farseer
+      M: 7"
+      T: 3
+      Sv: 6+
+      W: 4
+      Ld: 6+
+      OC: 1
+    ModelCount: 1
+    SameUnitCount: 1
+    ISv:
+      Value: 4+
+      Type: 0
+    Sprite: {fileID: 0}
+    Categories:
+    - Character
+    - Infantry
+    - Psyker
+    - Farseer
+    - 'Faction: Aeldari'
+    Rules:
+    - Strands of Fate
+    - Leader
+    Abilities:
+    - Name: Branching Fates (psychic)
+      Ability: "Once per turn, when you use a\_Fate dice to substitute a roll made
+        for a model or unit within\_12\" of a Farseer model from your army, one model
+        from your\_army with this ability can use it. If it does, the result of that\_Fate
+        dice is first changed to a 6."
+    - Name: Invulnerable Save (Farseer)
+      Ability: A Farseer has a 4+ Invulnerable save
+    - Name: Fortune (Psychic)
+      Ability: "In your Command phase, you can roll\_one D6: on a 2+, select one
+        friendly AELDARI unit within 12\"\_of this PSYKER. Until the start of your
+        next Command phase,\_each time an attack targets that unit, subtract 1 from
+        the\_Wound roll."
+    - Name: Leader
+      Ability: "This model can be attached to the following units:\n\u25A0 Guardian
+        Defenders\n\u25A0 Storm Guardians\n\u25A0 Warlock Conclave"
+    - Name: The Phoenix Gem
+      Ability: "Aeldari model only. The first time the bearer is\_destroyed, roll
+        one D6: on a 2+, keep it to one side. At\_the end of the phase, set the bearer
+        back up again,\_as close as possible to its previous position and not\_within
+        Engagement Range of any enemy models, with\_its full wounds remaining."
+    Weapons:
+    - Name: Shuriken Pistol
+      Range: 12"
+      A: 1
+      Sk: 2+
+      S: 4
+      AP: -1
+      D: 1
+      Type: 1
+      Keywords:
+      - Assault
+      - Pistol
+    - Name: Eldritch Storm
+      Range: 24"
+      A: D6
+      Sk: 3+
+      S: 6
+      AP: -2
+      D: D3
+      Type: 1
+      Keywords:
+      - Blast
+      - Psychic
+    - Name: Singing Spear
+      Range: 12"
+      A: 1
+      Sk: 2+
+      S: 9
+      AP: 0
+      D: 3
+      Type: 1
+      Keywords:
+      - Assault
+      - Psychic
+    - Name: Singing Spear
+      Range: Melee
+      A: 2
+      Sk: 2+
+      S: 3
+      AP: 0
+      D: 3
+      Type: 0
+      Keywords:
+      - Psychic
+  - Model:
+      Name: Guardian Defender
+      M: 7"
+      T: 3
+      Sv: 4+
+      W: 1
+      Ld: 6+
+      OC: 2
+    ModelCount: 10
+    SameUnitCount: 1
+    ISv:
+      Value: 
+      Type: 0
+    Sprite: {fileID: 0}
+    Categories:
+    - Guardian Defenders
+    - Battleline
+    - Infantry
+    - Grenades
+    - Guardians
+    - 'Faction: Aeldari'
+    Rules:
+    - Strands of Fate
+    Abilities:
+    - Name: Defenders of Fate
+      Ability: "At the end of your Command phase, for\_each objective marker you
+        control that has one or more units\_from your army with this ability within
+        range of it, roll one D6\_and add it to your Fate dice pool displaying the
+        result you\_just rolled."
+    - Name: Guardian Defenders
+      Ability: "When the last Guardian Defender model in\_this unit is destroyed,
+        any remaining Heavy Weapon Platform\_models in this unit are also destroyed."
+    Weapons:
+    - Name: Shuriken Catapult
+      Range: 18"
+      A: 2
+      Sk: 3+
+      S: 4
+      AP: -1
+      D: 1
+      Type: 1
+      Keywords:
+      - Assault
+    - Name: Close Combat Weapon
+      Range: Melee
+      A: 1
+      Sk: 3+
+      S: 3
+      AP: 0
+      D: 1
+      Type: 0
+      Keywords:
+      - '-'
+  - Model:
+      Name: Heavy Weapon Platform
+      M: 7"
+      T: 3
+      Sv: 4+
+      W: 2
+      Ld: 6+
+      OC: 0
+    ModelCount: 1
+    SameUnitCount: 1
+    ISv:
+      Value: 
+      Type: 0
+    Sprite: {fileID: 0}
+    Categories:
+    - Guardian Defenders
+    - Battleline
+    - Infantry
+    - Grenades
+    - Guardians
+    - 'Faction: Aeldari'
+    Rules:
+    - Strands of Fate
+    Abilities:
+    - Name: Defenders of Fate
+      Ability: "At the end of your Command phase, for\_each objective marker you
+        control that has one or more units\_from your army with this ability within
+        range of it, roll one D6\_and add it to your Fate dice pool displaying the
+        result you\_just rolled."
+    - Name: Guardian Defenders
+      Ability: "When the last Guardian Defender model in\_this unit is destroyed,
+        any remaining Heavy Weapon Platform\_models in this unit are also destroyed."
+    Weapons:
+    - Name: Close Combat Weapon
+      Range: Melee
+      A: 1
+      Sk: 3+
+      S: 3
+      AP: 0
+      D: 1
+      Type: 0
+      Keywords:
+      - '-'
+    - Name: Bright Lance
+      Range: 36"
+      A: 1
+      Sk: 3+
+      S: 12
+      AP: -3
+      D: D6+2
+      Type: 1
+      Keywords:
+      - '-'
+  - Model:
+      Name: Dark Reaper Exarch
+      M: 6"
+      T: 3
+      Sv: 3+
+      W: 2
+      Ld: 6+
+      OC: 1
+    ModelCount: 1
+    SameUnitCount: 1
+    ISv:
+      Value: 5+
+      Type: 0
+    Sprite: {fileID: 0}
+    Categories:
+    - Dark Reapers
+    - Infantry
+    - 'Faction: Aeldari'
+    Rules:
+    - Strands of Fate
+    Abilities:
+    - Name: Invulnerable Save
+      Ability: This unit has a 5+ Invulnerable save
+    - Name: Inescapable Accuracy
+      Ability: "Each time a model in this unit makes\_a ranged attack, you can ignore
+        any or all modifiers to that\_attack\u2019s Ballistic Skill characteristic
+        and to the Hit roll."
+    Weapons:
+    - Name: Close combat weapon
+      Range: Melee
+      A: 2
+      Sk: 3+
+      S: 3
+      AP: 0
+      D: 1
+      Type: 0
+      Keywords:
+      - '-'
+    - Name: "\u27A4 Aeldari Missile Launcher - Starshot"
+      Range: 48"
+      A: 1
+      Sk: 3+
+      S: 10
+      AP: -2
+      D: D6
+      Type: 1
+      Keywords:
+      - Ignores Cover
+    - Name: "\u27A4 Aeldari Missile Launcher - Sunburst"
+      Range: 48"
+      A: D6
+      Sk: 3+
+      S: 4
+      AP: -1
+      D: 1
+      Type: 1
+      Keywords:
+      - Blast
+      - Ignores Cover
+  - Model:
+      Name: Dark Reaper
+      M: 6"
+      T: 3
+      Sv: 3+
+      W: 1
+      Ld: 6+
+      OC: 1
+    ModelCount: 9
+    SameUnitCount: 1
+    ISv:
+      Value: 5+
+      Type: 0
+    Sprite: {fileID: 0}
+    Categories:
+    - Dark Reapers
+    - Infantry
+    - 'Faction: Aeldari'
+    Rules:
+    - Strands of Fate
+    Abilities:
+    - Name: Invulnerable Save
+      Ability: This unit has a 5+ Invulnerable save
+    - Name: Inescapable Accuracy
+      Ability: "Each time a model in this unit makes\_a ranged attack, you can ignore
+        any or all modifiers to that\_attack\u2019s Ballistic Skill characteristic
+        and to the Hit roll."
+    Weapons:
+    - Name: "\u27A4 Reaper Launcher - Starshot"
+      Range: 48"
+      A: 1
+      Sk: 3+
+      S: 8
+      AP: -2
+      D: 2
+      Type: 1
+      Keywords:
+      - Ignores Cover
+    - Name: "\u27A4 Reaper Launcher - Starswarm"
+      Range: 48"
+      A: 2
+      Sk: 3+
+      S: 5
+      AP: -1
+      D: 1
+      Type: 1
+      Keywords:
+      - Ignores Cover
+    - Name: Close combat weapon
+      Range: Melee
+      A: 2
+      Sk: 3+
+      S: 3
+      AP: 0
+      D: 1
+      Type: 0
+      Keywords:
+      - '-'
+  - Model:
+      Name: Rangers
+      M: 7"
+      T: 3
+      Sv: 5+
+      W: 1
+      Ld: 6+
+      OC: 1
+    ModelCount: 5
+    SameUnitCount: 1
+    ISv:
+      Value: 5+
+      Type: 2
+    Sprite: {fileID: 0}
+    Categories:
+    - Rangers
+    - Infantry
+    - 'Faction: Aeldari'
+    Rules:
+    - Infiltrators
+    - Stealth
+    - Strands of Fate
+    Abilities:
+    - Name: Invulnerable Save
+      Ability: "Models in this unit have a 5+ invulnerable save\_against ranged attacks."
+    - Name: Path of the Outcast
+      Ability: "Once per turn, when an enemy unit ends\_a Normal, Advance or Fall
+        Back move within 9\" of this unit,\_if this unit is not within Engagement
+        Range of one or more\_enemy units, it can make a Normal move of up to D6\"
+        as if it\_were your Movement phase."
+    Weapons:
+    - Name: Ranger long rifle
+      Range: 36"
+      A: 1
+      Sk: 3+
+      S: 4
+      AP: -1
+      D: 2
+      Type: 1
+      Keywords:
+      - Heavy
+      - Precision
+    - Name: Shuriken Pistol
+      Range: 12"
+      A: 1
+      Sk: 2+
+      S: 4
+      AP: -1
+      D: 1
+      Type: 1
+      Keywords:
+      - Assault
+      - Pistol
+    - Name: Close Combat Weapon
+      Range: Melee
+      A: 1
+      Sk: 3+
+      S: 3
+      AP: 0
+      D: 1
+      Type: 0
+      Keywords:
+      - '-'
+  - Model:
+      Name: Striking Scorpion
+      M: 7"
+      T: 3
+      Sv: 3+
+      W: 1
+      Ld: 6+
+      OC: 1
+    ModelCount: 4
+    SameUnitCount: 2
+    ISv:
+      Value: 5+
+      Type: 0
+    Sprite: {fileID: 0}
+    Categories:
+    - Striking Scorpions
+    - Infantry
+    - 'Faction: Aeldari'
+    Rules:
+    - Infiltrators
+    - Strands of Fate
+    Abilities:
+    - Name: Invulnerable Save
+      Ability: This unit has a 5+ Invulnerable save
+    - Name: Mandiblasters
+      Ability: "Melee weapons equipped by the bearer\_have the [DEVASTATING WOUNDS]
+        ability when targeting units\_without the MONSTER or VEHICLE keywords."
+    Weapons:
+    - Name: Scorpion chainsword
+      Range: Melee
+      A: 4
+      Sk: 3+
+      S: 4
+      AP: 0
+      D: 1
+      Type: 0
+      Keywords:
+      - Sustained Hits 1
+    - Name: Shuriken pistol
+      Range: 12"
+      A: 1
+      Sk: 3+
+      S: 4
+      AP: -1
+      D: 1
+      Type: 1
+      Keywords:
+      - Assault
+      - Pistol
+  - Model:
+      Name: Striking Scorpion Exarch
+      M: 7"
+      T: 3
+      Sv: 3+
+      W: 2
+      Ld: 6+
+      OC: 1
+    ModelCount: 1
+    SameUnitCount: 2
+    ISv:
+      Value: 5+
+      Type: 0
+    Sprite: {fileID: 0}
+    Categories:
+    - Striking Scorpions
+    - Infantry
+    - 'Faction: Aeldari'
+    Rules:
+    - Infiltrators
+    - Strands of Fate
+    Abilities:
+    - Name: Invulnerable Save
+      Ability: This unit has a 5+ Invulnerable save
+    - Name: Mandiblasters
+      Ability: "Melee weapons equipped by the bearer\_have the [DEVASTATING WOUNDS]
+        ability when targeting units\_without the MONSTER or VEHICLE keywords."
+    Weapons:
+    - Name: Scorpion's claw
+      Range: 12"
+      A: 2
+      Sk: 3+
+      S: 4
+      AP: -1
+      D: 1
+      Type: 1
+      Keywords:
+      - Assault
+      - Pistol
+    - Name: Scorpion's claw
+      Range: Melee
+      A: 4
+      Sk: 4+
+      S: 8
+      AP: -2
+      D: 2
+      Type: 0
+      Keywords:
+      - Sustained Hits 1
+    - Name: Scorpion chainsword
+      Range: Melee
+      A: 4
+      Sk: 3+
+      S: 4
+      AP: 0
+      D: 1
+      Type: 0
+      Keywords:
+      - Sustained Hits 1
+  - Model:
+      Name: Swooping Hawk
+      M: 14"
+      T: 3
+      Sv: 4+
+      W: 1
+      Ld: 6+
+      OC: 1
+    ModelCount: 4
+    SameUnitCount: 1
+    ISv:
+      Value: 5+
+      Type: 0
+    Sprite: {fileID: 0}
+    Categories:
+    - Swooping Hawks
+    - Infantry
+    - Fly
+    - Grenades
+    - 'Faction: Aeldari'
+    Rules:
+    - Deep Strike
+    - Strands of Fate
+    Abilities:
+    - Name: Invulnerable Save
+      Ability: This unit has a 5+ Invulnerable save
+    - Name: Skyleap
+      Ability: "At the end of your opponent\u2019s turn, if this unit is not\_within
+        Engagement Range of one or more enemy units, you\_can remove this unit from
+        the battlefield and place it into\_Strategic Reserves"
+    Weapons:
+    - Name: Lasblaster
+      Range: 24"
+      A: 4
+      Sk: 3+
+      S: 4
+      AP: 0
+      D: 1
+      Type: 1
+      Keywords:
+      - Assault
+      - Lethal Hits
+    - Name: Close Combat Weapon
+      Range: Melee
+      A: 2
+      Sk: 3+
+      S: 3
+      AP: 0
+      D: 1
+      Type: 0
+      Keywords:
+      - '-'
+  - Model:
+      Name: Swooping Hawk Exarch
+      M: 14"
+      T: 3
+      Sv: 4+
+      W: 2
+      Ld: 6+
+      OC: 1
+    ModelCount: 1
+    SameUnitCount: 1
+    ISv:
+      Value: 5+
+      Type: 0
+    Sprite: {fileID: 0}
+    Categories:
+    - Swooping Hawks
+    - Infantry
+    - Fly
+    - Grenades
+    - 'Faction: Aeldari'
+    Rules:
+    - Deep Strike
+    - Strands of Fate
+    Abilities:
+    - Name: Invulnerable Save
+      Ability: This unit has a 5+ Invulnerable save
+    - Name: Skyleap
+      Ability: "At the end of your opponent\u2019s turn, if this unit is not\_within
+        Engagement Range of one or more enemy units, you\_can remove this unit from
+        the battlefield and place it into\_Strategic Reserves"
+    Weapons:
+    - Name: Aeldari Power Sword
+      Range: Melee
+      A: 3
+      Sk: 3+
+      S: 4
+      AP: -2
+      D: 1
+      Type: 0
+      Keywords:
+      - '-'
+    - Name: Close Combat Weapon
+      Range: Melee
+      A: 2
+      Sk: 3+
+      S: 3
+      AP: 0
+      D: 1
+      Type: 0
+      Keywords:
+      - '-'
+    - Name: Hawk's Talon
+      Range: 24"
+      A: 4
+      Sk: 3+
+      S: 5
+      AP: 0
+      D: 1
+      Type: 1
+      Keywords:
+      - Assault
+      - Lethal Hits
+  - Model:
+      Name: Shroud Runner
+      M: 14"
+      T: 4
+      Sv: 4+
+      W: 3
+      Ld: 6+
+      OC: 2
+    ModelCount: 3
+    SameUnitCount: 3
+    ISv:
+      Value: 5+
+      Type: 2
+    Sprite: {fileID: 0}
+    Categories:
+    - Shroud Runners
+    - Fly
+    - Mounted
+    - 'Faction: Aeldari'
+    Rules:
+    - Scouts 9"
+    - Stealth
+    - Strands of Fate
+    Abilities:
+    - Name: Invulnerable Save
+      Ability: "Models in this unit have a 5+ invulnerable save\_against ranged attacks."
+    - Name: Target Acquisition
+      Ability: "At the start of your Shooting phase, select\_one enemy unit within
+        12\" of and visible to this unit. Until\_the end of the phase, ranged weapons
+        equipped by friendly\_Aeldari models have the [LETHAL HITS] ability when
+        targeting\_that unit"
+    Weapons:
+    - Name: Ranger long rifle
+      Range: 36"
+      A: 1
+      Sk: 3+
+      S: 4
+      AP: -1
+      D: 2
+      Type: 1
+      Keywords:
+      - Heavy
+      - Precision
+    - Name: Shuriken Pistol
+      Range: 12"
+      A: 1
+      Sk: 2+
+      S: 4
+      AP: -1
+      D: 1
+      Type: 1
+      Keywords:
+      - Assault
+      - Pistol
+    - Name: Close Combat Weapon
+      Range: Melee
+      A: 1
+      Sk: 3+
+      S: 3
+      AP: 0
+      D: 1
+      Type: 0
+      Keywords:
+      - '-'
+    - Name: Scatter Laser
+      Range: 36"
+      A: 6
+      Sk: 3+
+      S: 5
+      AP: 0
+      D: 1
+      Type: 1
+      Keywords:
+      - '-'
+  - Model:
+      Name: Hornet
+      M: 14"
+      T: 7
+      Sv: 3+
+      W: 8
+      Ld: 6+
+      OC: 2
+    ModelCount: 1
+    SameUnitCount: 1
+    ISv:
+      Value: 
+      Type: 0
+    Sprite: {fileID: 0}
+    Categories:
+    - Vehicle
+    - Fly
+    - 'Faction: Aeldari'
+    - Hornet
+    Rules:
+    - Deadly Demise 1
+    - Strands of Fate
+    Abilities:
+    - Name: Lightning Assault
+      Ability: "Each time this model ends a Normal move,\_you can select one enemy
+        unit (excluding MONSTER and\_VEHICLE units) that it moved over during that
+        move, then roll\_six D6: for each 4+, that enemy unit suffers 1 mortal wound."
+    Weapons:
+    - Name: 2x Bright Lance
+      Range: 36"
+      A: 1
+      Sk: 3+
+      S: 12
+      AP: -3
+      D: D6+2
+      Type: 1
+      Keywords:
+      - '-'
+  - Model:
+      Name: War Walker
+      M: 10"
+      T: 7
+      Sv: 3+
+      W: 6
+      Ld: 6+
+      OC: 2
+    ModelCount: 1
+    SameUnitCount: 3
+    ISv:
+      Value: 4+
+      Type: 0
+    Sprite: {fileID: 0}
+    Categories:
+    - War Walker
+    - Vehicle
+    - Walker
+    - 'Faction: Aeldari'
+    Rules:
+    - Scouts 9"
+    - Strands of Fate
+    Abilities:
+    - Name: Invulnerable Save
+      Ability: This unit has a 4+ Invulnerable save
+    - Name: Power Field
+      Ability: "Each time a ranged attack targets this unit,\_subtract 1 from the
+        Wound roll."
+    Weapons:
+    - Name: War Walker feet
+      Range: Melee
+      A: 3
+      Sk: 3+
+      S: 5
+      AP: 0
+      D: 1
+      Type: 0
+      Keywords:
+      - '-'
+    - Name: 2x Bright Lance
+      Range: 36"
+      A: 1
+      Sk: 3+
+      S: 12
+      AP: -3
+      D: D6+2
+      Type: 1
+      Keywords:
+      - '-'
+  StratagemsDefaultData:
+    Name: DEFAULT
+    StratagemsData:
+    - Name: COMMAND RE-ROLL
+      Type: 0
+      Icons: 0000000003000000
+      CP: 1
+      When: In any phase, just after you have made a Hit roll, a Wound roll, a Damage
+        roll, a saving throw, an Advance roll, a Charge roll, a Desperate Escape
+        test, a Hazardous test, or just after you have rolled the dice to determine
+        the number of attacks made with a weapon, for an attack, model or unit from
+        your army.
+      Target: 
+      Effect: You re-roll that roll, test or saving throw.
+      Restrictions: 
+    - Name: COUNTER-OFFENSIVE
+      Type: 0
+      Icons: 0400000003000000
+      CP: 2
+      When: Fight phase, just after an enemy unit has fought.
+      Target: One unit from your army that is within Engagement Range of one or more
+        enemy units and that has not already been selected to fight this phase.
+      Effect: Your unit fights next.
+      Restrictions: 
+    - Name: EPIC CHALLENGE
+      Type: 0
+      Icons: 0400000003000000
+      CP: 1
+      When: Fight phase, when a CHARACTER unit from your army that is within Engagement
+        Range of one or more Attached units is selected to fight.
+      Target: One CHARACTER model in your unit.
+      Effect: Until the end of the phase, all melee attacks made by that model have
+        the [PRECISION] ability.
+      Restrictions: 
+    - Name: INSANE BRAVERY
+      Type: 1
+      Icons: 0200000003000000
+      CP: 1
+      When: Battle-shock step of your Command phase, just before you take a Battle-shock
+        test for a unit from your army.
+      Target: A unit from your army that must take a Battle-shock test.
+      Effect: Your unit automatically passes that Battle-shock test.
+      Restrictions: You cannot use this Stratagem more than once per battle.
+    - Name: GRENADE
+      Type: 1
+      Icons: 0600000003000000
+      CP: 1
+      When: Your Shooting phase.
+      Target: One GRENADES unit from your army that is not within Engagement Range
+        of any enemy units and has not been selected to shoot this phase.
+      Effect: 'Select one enemy unit that is not within Engagement Range of any units
+        from your army and is within 8" of and visible to your GRENADES unit. Roll
+        six D6: for each 4+, that enemy unit suffers 1 mortal wound.'
+      Restrictions: 
+    - Name: TANK SHOCK
+      Type: 1
+      Icons: 0100000003000000
+      CP: 1
+      When: Your Charge phase.
+      Target: One VEHICLE unit from your army.
+      Effect: "Until the end of the phase, after your unit ends a Charge move, select
+        one enemy unit within Engagement Range of it, then select one melee weapon
+        your unit is equipped with. Roll a number of D6 equal to that weapon\u2019s
+        Strength characteristic. If that Strength characteristic is greater than
+        that enemy unit\u2019s Toughness characteristic, roll two additional D6.
+        For each 5+, that enemy unit suffers 1 mortal wound (to a maximum of 6 mortal
+        wounds)."
+      Restrictions: 
+    - Name: RAPID INGRESS
+      Type: 2
+      Icons: 0500000003000000
+      CP: 1
+      When: "End of your opponent\u2019s Movement phase."
+      Target: One unit from your army that is in Reserves.
+      Effect: Your unit can arrive on the battlefield as if it were the Reinforcements
+        step of your Movement phase.
+      Restrictions: You cannot use this Stratagem to enable a unit to arrive on the
+        battlefield during a battle round it would not normally be able to do so
+        in.
+    - Name: FIRE OVERWATCH
+      Type: 2
+      Icons: 0500000003000000
+      CP: 1
+      When: "Your opponent\u2019s Movement or Charge phase, just after an enemy unit
+        is set up or when an enemy unit starts or ends a Normal, Advance, Fall Back
+        or Charge move."
+      Target: One unit from your army that is within 24" of that enemy unit and that
+        would be eligible to shoot if it were your Shooting phase.
+      Effect: If that enemy unit is visible to your unit, your unit can shoot that
+        enemy unit as if it were your Shooting phase.
+      Restrictions: "You cannot target a TITANIC unit with this Stratagem. Until
+        the end of the phase, each time a model in your unit makes a ranged attack,
+        an unmodified Hit roll of 6 is required to score a hit, irrespective of the
+        attacking weapon\u2019s Ballistic Skill or any modifiers. You can only use
+        this Stratagem once per turn."
+    - Name: GO TO GROUND
+      Type: 2
+      Icons: 0600000003000000
+      CP: 1
+      When: "Your opponent\u2019s Shooting phase, just after an enemy unit has selected
+        its targets."
+      Target: "One INFANTRY unit from your army that was selected as the target of
+        one or more of the attacking unit\u2019s attacks."
+      Effect: Until the end of the phase, all models in your unit have a 6+ invulnerable
+        save and have the Benefit of Cover.
+      Restrictions: 
+    - Name: SMOKESCREEN
+      Type: 2
+      Icons: 0600000003000000
+      CP: 1
+      When: "Your opponent\u2019s Shooting phase, just after an enemy unit has selected
+        its targets."
+      Target: "One SMOKE unit from your army that was selected as the target of one
+        or more of the attacking unit\u2019s attacks."
+      Effect: Until the end of the phase, all models in your unit have the Benefit
+        of Cover and the Stealth ability.
+      Restrictions: 
+    - Name: HEROIC INTERVENTION
+      Type: 2
+      Icons: 0500000003000000
+      CP: 2
+      When: "Your opponent\u2019s Charge phase, just after an enemy unit ends a Charge
+        move."
+      Target: One unit from your army that is within 6" of that enemy unit and would
+        be eligible to declare a charge against that enemy unit if it were your Charge
+        phase.
+      Effect: Your unit now declares a charge that targets only that enemy unit,
+        and you resolve that charge as if it were your Charge phase.
+      Restrictions: You can only select a VEHICLE unit from your army if it is a
+        WALKER. Note that even if this charge is successful, your unit does not receive
+        any Charge bonus this turn.
+  StratagemsTeamData:
+    Name: BATTLE HOST
+    StratagemsData:
+    - Name: BLADESTORM
+      Type: 1
+      Icons: 06000000
+      CP: 1
+      When: Your Shooting phase.
+      Target: One AELDARI unit from your army that has not been selected to shoot
+        this phase.
+      Effect: Until the end of the phase, each time a model in your unit makes an
+        attack, on a Critical Wound, improve the Armour Penetration characteristic
+        of that attack by 2.
+      Restrictions: 
+    - Name: LIGHTNING-FAST REACTIONS
+      Type: 0
+      Icons: 00000000
+      CP: 1
+      When: "Your opponent\u2019s Shooting phase or the Fight phase, just after an
+        enemy unit has selected its targets."
+      Target: "One AELDARI unit from your army (excluding WRAITH CONSTRUCT units)
+        that was selected as the target of one or more of the attacking unit\u2019s
+        attacks."
+      Effect: Until the end of the phase, each time an attack targets your unit,
+        subtract 1 from the Hit roll.
+      Restrictions: 
+    - Name: MATCHLESS AGILITY
+      Type: 1
+      Icons: 05000000
+      CP: 1
+      When: Your Movement phase.
+      Target: One AELDARI unit from your army that has not been selected to move
+        this phase.
+      Effect: Until the end of the phase, if your unit Advances, do not make an Advance
+        roll for it. Instead, until the end of the phase, add 6" to the Move characteristic
+        of models in your unit.
+      Restrictions: 
+    - Name: PHANTASM
+      Type: 2
+      Icons: 05000000
+      CP: 1
+      When: "End of your opponent\u2019s Movement phase."
+      Target: One AELDARI INFANTRY unit from your army.
+      Effect: Your unit can make a Normal move of up to D6". It cannot embark within
+        a TRANSPORT at the end of this move.
+      Restrictions: You cannot select a unit within Engagement Range of one or more
+        enemy units, and until the end of the turn, you cannot target that unit with
+        the Heroic Intervention Stratagem.
+    - Name: FEIGNED RETREAT
+      Type: 1
+      Icons: 05000000
+      CP: 1
+      When: Your Movement phase, just after an AELDARI unit from your army makes
+        a Fall Back move.
+      Target: That AELDARI unit.
+      Effect: Your unit is eligible to shoot and declare a charge this turn even
+        though it Fell Back.
+      Restrictions: 
+    - Name: FIRE AND FADE
+      Type: 1
+      Icons: 06000000
+      CP: 2
+      When: End of your Shooting phase.
+      Target: One AELDARI unit from your army.
+      Effect: Your unit can make a Normal move. It cannot embark within a TRANSPORT
+        at the end of this move.
+      Restrictions: You cannot select an AIRCRAFT unit or a unit within Engagement
+        Range of one or more enemy units, and until the end of the turn, the unit
+        you selected is not eligible to declare a charge.

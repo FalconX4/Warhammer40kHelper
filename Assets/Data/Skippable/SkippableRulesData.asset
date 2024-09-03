@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc211e4c2695bc54287247874ae95885, type: 3}
+  m_Name: SkippableRulesData
+  m_EditorClassIdentifier: 
+  List:
+  - Anti-
+  - Assault
+  - Blast
+  - Devastating Wounds
+  - Extra Attacks
+  - Heavy
+  - Ignores Cover
+  - Lethal Hits
+  - Melta
+  - Pistol
+  - Psychic
+  - Rapid Fire
+  - Sustained Hits
+  - Stealth
+  - Torrent
+  - Twin-linked

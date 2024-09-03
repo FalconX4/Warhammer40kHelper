@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d28cd52f1fd52446950b1c625217f21, type: 3}
+  m_Name: RewrittenRulesData
+  m_EditorClassIdentifier: 
+  NameDescription:
+  - Name: Deadly Demise
+    Description: Dead D6 = 6 ? 6" {x} MW
+  - Name: Feel No Pain
+    Description: After save, D6 >= {x} ? no W
+  - Name: First Fight
+    Description: Go first in fight (even if charged)
+  - Name: Lone Operative
+    Description: Can't be targeted if 12" away
+  - Name: Scouts
+    Description: Can move before game start by {x}

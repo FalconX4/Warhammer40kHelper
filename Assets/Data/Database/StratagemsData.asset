@@ -1,0 +1,451 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f275ac7a0d6f2ba4faca61ace2d7f941, type: 3}
+  m_Name: StratagemsData
+  m_EditorClassIdentifier: 
+  Stratagems:
+  - Name: DEFAULT
+    StratagemsDetachmentData:
+    - Name: DEFAULT
+      StratagemsData:
+      - Name: COMMAND RE-ROLL
+        Type: 0
+        Icons: 0000000003000000
+        CP: 1
+        When: In any phase, just after you have made a Hit roll, a Wound roll, a
+          Damage roll, a saving throw, an Advance roll, a Charge roll, a Desperate
+          Escape test, a Hazardous test, or just after you have rolled the dice to
+          determine the number of attacks made with a weapon, for an attack, model
+          or unit from your army.
+        Target: 
+        Effect: You re-roll that roll, test or saving throw.
+        Restrictions: 
+      - Name: COUNTER-OFFENSIVE
+        Type: 0
+        Icons: 0400000003000000
+        CP: 2
+        When: Fight phase, just after an enemy unit has fought.
+        Target: One unit from your army that is within Engagement Range of one or
+          more enemy units and that has not already been selected to fight this phase.
+        Effect: Your unit fights next.
+        Restrictions: 
+      - Name: EPIC CHALLENGE
+        Type: 0
+        Icons: 0400000003000000
+        CP: 1
+        When: Fight phase, when a CHARACTER unit from your army that is within Engagement
+          Range of one or more Attached units is selected to fight.
+        Target: One CHARACTER model in your unit.
+        Effect: Until the end of the phase, all melee attacks made by that model
+          have the [PRECISION] ability.
+        Restrictions: 
+      - Name: INSANE BRAVERY
+        Type: 1
+        Icons: 0200000003000000
+        CP: 1
+        When: Battle-shock step of your Command phase, just before you take a Battle-shock
+          test for a unit from your army.
+        Target: A unit from your army that must take a Battle-shock test.
+        Effect: Your unit automatically passes that Battle-shock test.
+        Restrictions: You cannot use this Stratagem more than once per battle.
+      - Name: GRENADE
+        Type: 1
+        Icons: 0600000003000000
+        CP: 1
+        When: Your Shooting phase.
+        Target: One GRENADES unit from your army that is not within Engagement Range
+          of any enemy units and has not been selected to shoot this phase.
+        Effect: 'Select one enemy unit that is not within Engagement Range of any
+          units from your army and is within 8" of and visible to your GRENADES unit.
+          Roll six D6: for each 4+, that enemy unit suffers 1 mortal wound.'
+        Restrictions: 
+      - Name: TANK SHOCK
+        Type: 1
+        Icons: 0100000003000000
+        CP: 1
+        When: Your Charge phase.
+        Target: One VEHICLE unit from your army.
+        Effect: "Until the end of the phase, after your unit ends a Charge move,
+          select one enemy unit within Engagement Range of it, then select one melee
+          weapon your unit is equipped with. Roll a number of D6 equal to that weapon\u2019s
+          Strength characteristic. If that Strength characteristic is greater than
+          that enemy unit\u2019s Toughness characteristic, roll two additional D6.
+          For each 5+, that enemy unit suffers 1 mortal wound (to a maximum of 6
+          mortal wounds)."
+        Restrictions: 
+      - Name: RAPID INGRESS
+        Type: 2
+        Icons: 0500000003000000
+        CP: 1
+        When: "End of your opponent\u2019s Movement phase."
+        Target: One unit from your army that is in Reserves.
+        Effect: Your unit can arrive on the battlefield as if it were the Reinforcements
+          step of your Movement phase.
+        Restrictions: You cannot use this Stratagem to enable a unit to arrive on
+          the battlefield during a battle round it would not normally be able to
+          do so in.
+      - Name: FIRE OVERWATCH
+        Type: 2
+        Icons: 0500000003000000
+        CP: 1
+        When: "Your opponent\u2019s Movement or Charge phase, just after an enemy
+          unit is set up or when an enemy unit starts or ends a Normal, Advance,
+          Fall Back or Charge move."
+        Target: One unit from your army that is within 24" of that enemy unit and
+          that would be eligible to shoot if it were your Shooting phase.
+        Effect: If that enemy unit is visible to your unit, your unit can shoot that
+          enemy unit as if it were your Shooting phase.
+        Restrictions: "You cannot target a TITANIC unit with this Stratagem. Until
+          the end of the phase, each time a model in your unit makes a ranged attack,
+          an unmodified Hit roll of 6 is required to score a hit, irrespective of
+          the attacking weapon\u2019s Ballistic Skill or any modifiers. You can only
+          use this Stratagem once per turn."
+      - Name: GO TO GROUND
+        Type: 2
+        Icons: 0600000003000000
+        CP: 1
+        When: "Your opponent\u2019s Shooting phase, just after an enemy unit has
+          selected its targets."
+        Target: "One INFANTRY unit from your army that was selected as the target
+          of one or more of the attacking unit\u2019s attacks."
+        Effect: Until the end of the phase, all models in your unit have a 6+ invulnerable
+          save and have the Benefit of Cover.
+        Restrictions: 
+      - Name: SMOKESCREEN
+        Type: 2
+        Icons: 0600000003000000
+        CP: 1
+        When: "Your opponent\u2019s Shooting phase, just after an enemy unit has
+          selected its targets."
+        Target: "One SMOKE unit from your army that was selected as the target of
+          one or more of the attacking unit\u2019s attacks."
+        Effect: Until the end of the phase, all models in your unit have the Benefit
+          of Cover and the Stealth ability.
+        Restrictions: 
+      - Name: HEROIC INTERVENTION
+        Type: 2
+        Icons: 0500000003000000
+        CP: 2
+        When: "Your opponent\u2019s Charge phase, just after an enemy unit ends a
+          Charge move."
+        Target: One unit from your army that is within 6" of that enemy unit and
+          would be eligible to declare a charge against that enemy unit if it were
+          your Charge phase.
+        Effect: Your unit now declares a charge that targets only that enemy unit,
+          and you resolve that charge as if it were your Charge phase.
+        Restrictions: You can only select a VEHICLE unit from your army if it is
+          a WALKER. Note that even if this charge is successful, your unit does not
+          receive any Charge bonus this turn.
+  - Name: NECRONS
+    StratagemsDetachmentData:
+    - Name: AWAKENED DYNASTY
+      StratagemsData:
+      - Name: PROTOCOL OF THE ETERNAL REVENANT
+        Type: 0
+        Icons: 0000000003000000
+        CP: 1
+        When: Any phase.
+        Target: One NECRONS INFANTRY CHARACTER model from your army that was just
+          destroyed. You can use this Stratagem on that model even though it was
+          just destroyed.
+        Effect: At the end of the phase, set your model back up on the battlefield
+          as close as possible to where it was destroyed and not within Engagement
+          Range of any enemy units, with half of its starting number of wounds remaining.
+        Restrictions: Each model can only be targeted with this Stratagem once per
+          battle.
+      - Name: PROTOCOL OF THE UNDYING LEGIONS
+        Type: 0
+        Icons: 060000000400000003000000
+        CP: 1
+        When: "Your opponent\u2019s Shooting phase or the Fight phase, just after
+          an enemy unit has resolved its attacks."
+        Target: "One NECRONS unit from your army that had one or more of its models
+          destroyed as a result of the attacking unit\u2019s attacks."
+        Effect: Your unit activates its Reanimation Protocols and reanimates D3 wounds
+          (or D3+1 wounds if a NECRONS CHARACTER is leading your unit].
+        Restrictions: 
+      - Name: PROTOCOL OF THE HUNGRY VOID
+        Type: 0
+        Icons: 0400000003000000
+        CP: 1
+        When: Fight phase.
+        Target: One NECRONS unit from your army that has not been selected to fight
+          this phase.
+        Effect: Until the end of the phase, add 1 to the Strength characteristic
+          of melee weapons equipped by models in your unit. In addition, If a NECRONS
+          CHARACTER is leading your unit, until the end of the phase, improve the
+          Armour Penetration characteristic of melee weapons equipped by models in
+          your unit by 1. (this is not cumulative with any other modifiers that improve
+          Armour Penetration].
+        Restrictions: 
+      - Name: PROTOCOL OF THE SUDDEN STORM
+        Type: 1
+        Icons: 0500000003000000
+        CP: 1
+        When: Your Movement phase.
+        Target: One NECRONS unit from your army.
+        Effect: Until the end of the turn, ranged weapons equipped by models in your
+          unit have the [ASSAULT] ability. In addition, if a NECRONS CHARACTER is
+          leading your unit, until the end of the phase, you can re-roll Advance
+          rolls made for your unit.
+        Restrictions: 
+      - Name: PROTOCOL OF THE CONQUERING TYRANT
+        Type: 1
+        Icons: 0600000003000000
+        CP: 1
+        When: Your Shooting phase.
+        Target: One NECRONS unit from your army that has not been selected to shoot
+          this phase.
+        Effect: Until the end of the phase, each time a model in your unit makes
+          an attack that targets a unit within half range, re-roll a Hit roll of
+          1. If a NECRONS CHARACTER is leading your unit, until the end of the phase,
+          you can re-roll the Hit roll for that attack instead.
+        Restrictions: 
+      - Name: PROTOCOL OF THE VENGEFUL STARS
+        Type: 2
+        Icons: 0600000003000000
+        CP: 2
+        When: "Your opponent\u2019s Shooting phase, just after an enemy unit destroys
+          a NECRONS unit from your army."
+        Target: One NECRONS CHARACTER unit from your army that was within 6" of that
+          NECRONS unit when it was destroyed.
+        Effect: After the attacking unit has resolved its attacks, your unit can
+          shoot as if it were your Shooting phase, but it must target only that enemy
+          unit when doing so, and can only do so if that enemy unit is an eligible
+          target.
+        Restrictions: 
+    - Name: HYPERCRYPT LEGION
+      StratagemsData:
+      - Name: HYPERPHASIC RECALL
+        Type: 0
+        Icons: 060000000400000003000000
+        CP: 2
+        When: "Your opponent\u2019s Shooting phase or the Fight phase, just after
+          an enemy unit has shot or fought."
+        Target: "One NECRONS INFANTRY unit from your army that had one or more of
+          its models destroyed as a result of the attacking unit\u2019s attacks and
+          one friendly MONOLITH model."
+        Effect: Remove your INFANTRY unit from the battlefield and then set it back
+          up anywhere on the battlefield that is wholly within 6" of your MONOLITH
+          model and not within Engagement Range of one or more enemy units.
+        Restrictions: 
+      - Name: QUANTUM DEFLECTION
+        Type: 0
+        Icons: 060000000400000003000000
+        CP: 1
+        When: "Your opponent\u2019s Shooting phase or the Fight phase, just after
+          an enemy unit has selected its targets."
+        Target: "One NECRONS VEHICLE unit from your army that was selected as the
+          target of one or more of the attacking unit\u2019s attacks."
+        Effect: Until the end of the phase, models in your unit have a 4+ invulnerable
+          save.
+        Restrictions: 
+      - Name: REANIMATION CRYPTS
+        Type: 1
+        Icons: 0200000003000000
+        CP: 1
+        When: Your Command phase.
+        Target: Your NECRONS WARLORD.
+        Effect: "For each of your NECRONS units in Reserves, that Reserves unit\u2019s
+          Reanimation Protocols activate."
+        Restrictions: 
+      - Name: COSMIC PRECISION
+        Type: 1
+        Icons: 0500000003000000
+        CP: 1
+        When: Your Movement phase.
+        Target: One NECRONS unit from your army that is arriving using the Deep Strike
+          or Hyperphasing abilities this phase.
+        Effect: Your unit can be set up anywhere on the battlefield that is more
+          than 3" horizontally away from all enemy models.
+        Restrictions: A unit targeted with this Stratagem is not eligible to declare
+          a charge in the same turn.
+      - Name: DIMENSIONAL CORRIDOR
+        Type: 1
+        Icons: 0100000003000000
+        CP: 2
+        When: Your Charge phase.
+        Target: One NECRONS unit from your army that was set up on the battlefield
+          this turn using the Eternity Gate ability of a MONOLITH model that started
+          the turn on the battlefield.
+        Effect: Your unit is eligible to charge this phase.
+        Restrictions: 
+      - Name: ENTROPIC DAMPING
+        Type: 2
+        Icons: 0600000003000000
+        CP: 1
+        When: "Your opponent\u2019s Shooting phase, just after an enemy unit has
+          selected its targets."
+        Target: "One TITANIC model from your army that was selected as the target
+          of one or more of the attacking unit\u2019s attacks and is within 18\"
+          of the attacking unit."
+        Effect: Until the end of the phase, weapons equipped by models in the attacking
+          unit have the [HAZARDOUS] ability.
+        Restrictions: 
+    - Name: CANOPTEK COURT
+      StratagemsData:
+      - Name: CURSE OF THE CRYPTEK
+        Type: 0
+        Icons: 060000000400000003000000
+        CP: 1
+        When: "Your opponent\u2019s Shooting phase or the Fight phase, just after
+          an enemy unit has shot or fought."
+        Target: "One CYPTEK model from your army that was destroyed by one of the
+          attacking unit\u2019s attacks. You can use this Stratagem on that model
+          even though it was just destroyed."
+        Effect: Until the end of the battle, each time a friendly CNOPTEK model makes
+          an attack that targets the attacking unit, add 1 to the Hit roll and add
+          1 to the Wound roll.
+        Restrictions: 
+      - Name: CYNOSURE OF ERADICATION
+        Type: 0
+        Icons: 060000000400000003000000
+        CP: 2
+        When: The start of your Shooting phase or the start of the Fight phase.
+        Target: "One CYPTEK or CNOPTEK unit from your army that is wholly within
+          your army\u2019s Power Matrix."
+        Effect: Until the end of the phase, weapons equipped by CYPTEK or CNOPTEK
+          models in your unit have the [DEVASTATING WOUNDS] ability.
+        Restrictions: 
+      - Name: SOLAR PULSE
+        Type: 1
+        Icons: 0600000003000000
+        CP: 1
+        When: Start of your Shooting phase.
+        Target: One CYPTEK model from your army.
+        Effect: Select one objective marker within 18" of your CYPTEK model. Until
+          the end of the phase, weapons equipped by friendly NCRONS models have the
+          [IGNORES COVER] ability while targeting units within range of that objective
+          marker.
+        Restrictions: 
+      - Name: REACTIVE SUBROUTINES
+        Type: 2
+        Icons: 0500000003000000
+        CP: 1
+        When: "Your opponent\u2019s Movement phase, just after an enemy unit ends
+          a Normal, Advance or Fall Back move."
+        Target: One CNOPTEK unit from your army that is within 9" of that enemy unit.
+        Effect: Your unit can make a Normal move of up to 6".
+        Restrictions: 
+      - Name: COUNTERTEMPORAL SHIFT
+        Type: 2
+        Icons: 0600000003000000
+        CP: 1
+        When: "Your opponent\u2019s Shooting phase, just after an enemy unit has
+          selected its targets."
+        Target: "One CNOPTEK unit from your army that was selected as the target
+          of one or more of the attacking unit\u2019s attacks."
+        Effect: Until the end of the phase, your unit can only be selected as the
+          target of a ranged attack if the attacking model is within 18".
+        Restrictions: 
+      - Name: SUBOPTIMAL FACADE
+        Type: 2
+        Icons: 0100000003000000
+        CP: 1
+        When: "Your opponent\u2019s Charge phase, just after an enemy unit has declared
+          a charge."
+        Target: "One CNOPTEK unit from your army that was selected as a target of
+          that charge and is wholly within your army\u2019s Power Matrix."
+        Effect: "Your unit\u2019s Reanimation Protocols activate."
+        Restrictions: 
+  - Name: AELDARI
+    StratagemsDetachmentData:
+    - Name: BATTLE HOST
+      StratagemsData:
+      - Name: BLADESTORM
+        Type: 1
+        Icons: 06000000
+        CP: 1
+        When: Your Shooting phase.
+        Target: One AELDARI unit from your army that has not been selected to shoot
+          this phase.
+        Effect: Until the end of the phase, each time a model in your unit makes
+          an attack, on a Critical Wound, improve the Armour Penetration characteristic
+          of that attack by 2.
+        Restrictions: 
+      - Name: LIGHTNING-FAST REACTIONS
+        Type: 0
+        Icons: 00000000
+        CP: 1
+        When: "Your opponent\u2019s Shooting phase or the Fight phase, just after
+          an enemy unit has selected its targets."
+        Target: "One AELDARI unit from your army (excluding WRAITH CONSTRUCT units)
+          that was selected as the target of one or more of the attacking unit\u2019s
+          attacks."
+        Effect: Until the end of the phase, each time an attack targets your unit,
+          subtract 1 from the Hit roll.
+        Restrictions: 
+      - Name: MATCHLESS AGILITY
+        Type: 1
+        Icons: 05000000
+        CP: 1
+        When: Your Movement phase.
+        Target: One AELDARI unit from your army that has not been selected to move
+          this phase.
+        Effect: Until the end of the phase, if your unit Advances, do not make an
+          Advance roll for it. Instead, until the end of the phase, add 6" to the
+          Move characteristic of models in your unit.
+        Restrictions: 
+      - Name: PHANTASM
+        Type: 2
+        Icons: 05000000
+        CP: 1
+        When: "End of your opponent\u2019s Movement phase."
+        Target: One AELDARI INFANTRY unit from your army.
+        Effect: Your unit can make a Normal move of up to D6". It cannot embark within
+          a TRANSPORT at the end of this move.
+        Restrictions: You cannot select a unit within Engagement Range of one or
+          more enemy units, and until the end of the turn, you cannot target that
+          unit with the Heroic Intervention Stratagem.
+      - Name: FEIGNED RETREAT
+        Type: 1
+        Icons: 05000000
+        CP: 1
+        When: Your Movement phase, just after an AELDARI unit from your army makes
+          a Fall Back move.
+        Target: That AELDARI unit.
+        Effect: Your unit is eligible to shoot and declare a charge this turn even
+          though it Fell Back.
+        Restrictions: 
+      - Name: FIRE AND FADE
+        Type: 1
+        Icons: 06000000
+        CP: 2
+        When: End of your Shooting phase.
+        Target: One AELDARI unit from your army.
+        Effect: Your unit can make a Normal move. It cannot embark within a TRANSPORT
+          at the end of this move.
+        Restrictions: You cannot select an AIRCRAFT unit or a unit within Engagement
+          Range of one or more enemy units, and until the end of the turn, the unit
+          you selected is not eligible to declare a charge.
+  StratagemsUI:
+  - StratagemType: 0
+    Color: {r: 0.13333334, g: 0.47450984, b: 0.42352945, a: 1}
+  - StratagemType: 1
+    Color: {r: 0.03529412, g: 0.40000004, b: 0.5686275, a: 1}
+  - StratagemType: 2
+    Color: {r: 0.7490196, g: 0.050980397, b: 0.07058824, a: 1}
+  StratagemIcons:
+  - Icon: 0
+    Sprite: {fileID: 21300000, guid: e5de14e1cc7fa0044be54b5fc735d932, type: 3}
+  - Icon: 1
+    Sprite: {fileID: 21300000, guid: 9ed2cda5419427545a9d4fdc379817e9, type: 3}
+  - Icon: 2
+    Sprite: {fileID: 21300000, guid: dddefe48aaa92a341b6db03da097c5b1, type: 3}
+  - Icon: 3
+    Sprite: {fileID: 0}
+  - Icon: 4
+    Sprite: {fileID: 21300000, guid: 2e3ab51ed78a31747811d81f34358ee6, type: 3}
+  - Icon: 5
+    Sprite: {fileID: 21300000, guid: c9199a69f2caf2848801cf16ff064b55, type: 3}
+  - Icon: 6
+    Sprite: {fileID: 21300000, guid: cf3d2471ad91cb84394215081851de7b, type: 3}
