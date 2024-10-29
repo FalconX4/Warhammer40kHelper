@@ -249,7 +249,7 @@ public class BattleScribeDatabaseParserWindow : EditorWindow
 
 	void FindUnits(string unitSummary, string inlineText, TeamScriptableObject team, bool other)
 	{
-		var teamData = team.TeamData;
+		var teamData = team.UnitsData;
 		teamData.Clear();
 
 		var unitList = new List<string>();
@@ -302,7 +302,7 @@ public class BattleScribeDatabaseParserWindow : EditorWindow
 					FindCategoriesData(unitInfo, ref data);
 					FindRules(unitInfo, ref data);
 					FindWeaponsData(unitInfo, unitName, ref data);
-					data.Sprite = AssetDatabase.LoadAssetAtPath<Sprite>($"Assets/Art/UnitPicture/{team.Race}/{data.Model.Name}.png");
+					data.SpritePath = $"Assets/Art/UnitPicture/{team.Race}/{data.Model.Name}.png";
 
 					teamData.Add(data);
 					if (unitListIndex == -1)

@@ -22,7 +22,7 @@ public class DefenseWindow : MonoBehaviour
 		List<AttackingModel> children = new List<AttackingModel>();
 		List<string> weaponsName = new List<string>();
 		var teamData = team1 ? Database.Instance.Team2ScriptableObject : Database.Instance.Team1ScriptableObject;
-		foreach (var data in teamData.TeamData)
+		foreach (var data in teamData.UnitsData)
 		{
 			foreach (var weapon in data.Weapons)
 			{

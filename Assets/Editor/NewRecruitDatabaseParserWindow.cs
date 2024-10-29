@@ -1,10 +1,8 @@
 using System;
 using System.Collections.Generic;
 using System.IO;
-using System.Text.RegularExpressions;
 using UnityEditor;
 using UnityEngine;
-using static TeamScriptableObject;
 
 public class NewRecruitDatabaseParserWindow : EditorWindow
 {
@@ -58,7 +56,7 @@ public class NewRecruitDatabaseParserWindow : EditorWindow
 		EditorGUILayout.BeginHorizontal();
 		currentPath = EditorGUILayout.TextField(currentPath);
 		if (GUILayout.Button(uiText))
-			currentPath = EditorUtility.OpenFilePanel($"{uiText} battlescribe file", _downloadPath, "json");
+			currentPath = EditorUtility.OpenFilePanel($"{uiText} NewRecruit file", _downloadPath, "json");
 		EditorGUILayout.EndHorizontal();
 		return currentPath;
 	}

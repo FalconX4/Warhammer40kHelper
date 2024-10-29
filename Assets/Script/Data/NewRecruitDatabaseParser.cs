@@ -59,7 +59,7 @@ public static class NewRecruitDatabaseParser
 
 	public static void FindUnits(Root teamRoot, TeamScriptableObject team)
 	{
-		var teamData = team.TeamData;
+		var teamData = team.UnitsData;
 		teamData.Clear();
 
 		var selections = teamRoot.roster.forces[0].selections;
@@ -83,9 +83,9 @@ public static class NewRecruitDatabaseParser
 		FindModelData(isUnit && unit.selections.Count > 1 ? selection : unit, ref data);
 		FindRules(unit, ref data);
 		FindWeaponsData(selection, ref data);
-		data.Sprite = Resources.Load<Sprite>($"Art/UnitPicture/{team.Race}/{data.Model.Name}");
+		data.SpritePath = $"Art/UnitPicture/{team.Race}/{data.Model.Name}";
 
-		var teamData = team.TeamData;
+		var teamData = team.UnitsData;
 		var alreadyIn = false;
 		int j;
 		for (j = 0; j < teamData.Count && !alreadyIn; j++)

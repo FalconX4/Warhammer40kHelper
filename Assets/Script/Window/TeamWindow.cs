@@ -21,8 +21,8 @@ public class TeamWindow : MonoBehaviour
 
 	public void OnEnable()
 	{
-		SetData(Database.Instance.Team1ScriptableObject.TeamData, Team1Parent, Team1Container, true);
-		SetData(Database.Instance.Team2ScriptableObject.TeamData, Team2Parent, Team2Container, false);
+		SetData(Database.Instance.Team1ScriptableObject.UnitsData, Team1Parent, Team1Container, true);
+		SetData(Database.Instance.Team2ScriptableObject.UnitsData, Team2Parent, Team2Container, false);
 
 		var team1UI = Database.Instance.RacesScriptableObject.Get(Database.Instance.Team1ScriptableObject.Race);
 		var team2UI = Database.Instance.RacesScriptableObject.Get(Database.Instance.Team2ScriptableObject.Race);

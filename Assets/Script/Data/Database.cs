@@ -39,6 +39,12 @@ public class Database : MonoBehaviour
 			_rewrittenRules[RewrittenRulesScriptableObject.NameDescription[i].Name] = RewrittenRulesScriptableObject.NameDescription[i].Description;
 		for (int i = 0; i < RewrittenWeaponsRulesScriptableObject.NameDescription.Count; i++)
 			_rewrittenWeaponsRules[RewrittenWeaponsRulesScriptableObject.NameDescription[i].Name] = RewrittenWeaponsRulesScriptableObject.NameDescription[i].Description;
+		DatabaseSaveLoad.LoadFromFile(RulesScriptableObject, Team1ScriptableObject, Team2ScriptableObject);
+	}
+
+	private void OnDestroy()
+	{
+		Instance = null;
 	}
 
 	public string FindAbilityName(string abilityName) => SkippableAbilitiesScriptableObject.List.Contains(abilityName) ? string.Empty : ShowRewrittenText && _rewrittenAbilities.ContainsKey(abilityName) ? _rewrittenAbilities[abilityName] : abilityName;

@@ -71,6 +71,7 @@
     <Compile Include="Assets\Script\UIManager.cs" />
     <Compile Include="Assets\Script\WindowPart\Weapons.cs" />
     <Compile Include="Assets\Script\WindowPart\WeaponKeyword.cs" />
+    <Compile Include="Assets\Script\Data\DatabaseSaveLoad.cs" />
     <Compile Include="Assets\Script\WindowPart\AttackingModel.cs" />
     <Compile Include="Assets\Script\Data\ListStringScriptableObject.cs" />
     <Compile Include="Assets\Script\WindowPart\Stratagem.cs" />
@@ -1077,10 +1078,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="SimpleFileBrowser.Runtime.csproj">
-      <Project>{4298ABE0-A1A9-1A2A-67B9-638CF71F2AB7}</Project>
-      <Name>SimpleFileBrowser.Runtime</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />

@@ -1,132 +1,36 @@
 {
     "m_SelectedDeviceId": "R38M700CJSM",
     "m_SelectedProcess": {
-        "deviceId": "R38M700CJSM",
-        "name": "com.DefaultCompany.Warhammer40kHelper",
-        "processId": 18250,
+        "deviceId": "",
+        "name": "",
+        "processId": 0,
         "exited": false
     },
     "m_SelectedPriority": 0,
     "m_KnownProcessesForSerialization": [
         {
             "deviceId": "R38M700CJSM",
-            "name": "com.sec.android.app.launcher",
-            "processId": 2587,
-            "exited": false
-        },
-        {
-            "deviceId": "R38M700CJSM",
-            "name": "com.DefaultCompany.Warhammer40kHelper",
-            "processId": 4969,
-            "exited": false
-        },
-        {
-            "deviceId": "R38M700CJSM",
-            "name": "com.DefaultCompany.Warhammer40kHelper",
-            "processId": 9389,
-            "exited": false
-        },
-        {
-            "deviceId": "R38M700CJSM",
-            "name": "com.DefaultCompany.Warhammer40kHelper",
-            "processId": 12315,
-            "exited": false
-        },
-        {
-            "deviceId": "R38M700CJSM",
-            "name": "com.DefaultCompany.Warhammer40kHelper",
-            "processId": 14139,
-            "exited": false
-        },
-        {
-            "deviceId": "R38M700CJSM",
-            "name": "com.DefaultCompany.Warhammer40kHelper",
-            "processId": 21834,
-            "exited": false
-        },
-        {
-            "deviceId": "R38M700CJSM",
-            "name": "com.DefaultCompany.Warhammer40kHelper",
-            "processId": 32269,
-            "exited": false
-        },
-        {
-            "deviceId": "R38M700CJSM",
-            "name": "com.DefaultCompany.Warhammer40kHelper",
-            "processId": 3095,
-            "exited": false
-        },
-        {
-            "deviceId": "R38M700CJSM",
-            "name": "com.DefaultCompany.Warhammer40kHelper",
-            "processId": 19082,
-            "exited": false
-        },
-        {
-            "deviceId": "R38M700CJSM",
-            "name": "com.DefaultCompany.Warhammer40kHelper",
-            "processId": 20182,
-            "exited": false
-        },
-        {
-            "deviceId": "R38M700CJSM",
-            "name": "com.DefaultCompany.Warhammer40kHelper",
-            "processId": 27008,
-            "exited": false
-        },
-        {
-            "deviceId": "R38M700CJSM",
-            "name": "com.DefaultCompany.Warhammer40kHelper",
-            "processId": 29032,
-            "exited": false
-        },
-        {
-            "deviceId": "R38M700CJSM",
-            "name": "com.DefaultCompany.Warhammer40kHelper",
-            "processId": 29633,
-            "exited": false
-        },
-        {
-            "deviceId": "R38M700CJSM",
-            "name": "com.DefaultCompany.Warhammer40kHelper",
-            "processId": 30766,
-            "exited": false
-        },
-        {
-            "deviceId": "R38M700CJSM",
-            "name": "com.DefaultCompany.Warhammer40kHelper",
-            "processId": 2925,
-            "exited": false
-        },
-        {
-            "deviceId": "R38M700CJSM",
-            "name": "com.DefaultCompany.Warhammer40kHelper",
-            "processId": 5929,
-            "exited": false
-        },
-        {
-            "deviceId": "R38M700CJSM",
-            "name": "com.DefaultCompany.Warhammer40kHelper",
-            "processId": 7842,
-            "exited": false
-        },
-        {
-            "deviceId": "R38M700CJSM",
-            "name": "com.DefaultCompany.Warhammer40kHelper",
-            "processId": 10007,
-            "exited": false
-        },
-        {
-            "deviceId": "R38M700CJSM",
-            "name": "com.DefaultCompany.Warhammer40kHelper",
-            "processId": 16381,
-            "exited": false
-        },
-        {
-            "deviceId": "R38M700CJSM",
             "name": "com.DefaultCompany.Warhammer40kHelper",
             "processId": 18250,
-            "exited": false
+            "exited": true
+        },
+        {
+            "deviceId": "R38M700CJSM",
+            "name": "com.DefaultCompany.Warhammer40kHelper",
+            "processId": 21483,
+            "exited": true
+        },
+        {
+            "deviceId": "R38M700CJSM",
+            "name": "com.DefaultCompany.Warhammer40kHelper",
+            "processId": 23631,
+            "exited": true
+        },
+        {
+            "deviceId": "R38M700CJSM",
+            "name": "com.DefaultCompany.Warhammer40kHelper",
+            "processId": 27313,
+            "exited": true
         }
     ],
     "m_Tags": {

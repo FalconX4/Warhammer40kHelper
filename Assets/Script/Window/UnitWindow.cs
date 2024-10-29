@@ -34,7 +34,7 @@ public class UnitWindow : MonoBehaviour
 		_team1 = team1;
 		Abilities.SetData(unitData.Rules, unitData.Abilities, team1);
 		Keywords.SetData(unitData.Categories, team1);
-		Model.SetData(unitData, unitData.Sprite, team1);
+		Model.SetData(unitData, Resources.Load<Sprite>(unitData.SpritePath), team1);
 		Weapons.SetData(unitData.Weapons, team1);
 
 		var teamUI = Database.Instance.RacesScriptableObject.Get(team1 ? Database.Instance.Team1ScriptableObject.Race : Database.Instance.Team2ScriptableObject.Race);

@@ -17,7 +17,7 @@ public class UIManager : MonoBehaviour
 		Instance = this;
 		Screen.autorotateToPortrait = false;
 		Screen.autorotateToPortraitUpsideDown = false;
-		Screen.autorotateToLandscapeLeft= false;
+		Screen.autorotateToLandscapeLeft = false;
 		Screen.autorotateToLandscapeRight = false;
 		Screen.orientation = ScreenOrientation.LandscapeLeft | ScreenOrientation.LandscapeRight;
 	}

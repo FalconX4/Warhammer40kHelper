@@ -58,7 +58,7 @@ public class TeamScriptableObject : ScriptableObject
 		public int ModelCount;
 		public int SameUnitCount;
 		public InvulnerableData ISv;
-		public Sprite Sprite;
+		public string SpritePath;
 		public List<string> Categories;
 		public List<string> Rules;
 		public List<AbilityData> Abilities;
@@ -85,7 +85,7 @@ public class TeamScriptableObject : ScriptableObject
 
 	public string Race = string.Empty;
 	public string Detachment = string.Empty;
-	public List<UnitData> TeamData = new List<UnitData>();
+	public List<UnitData> UnitsData = new List<UnitData>();
 	public StratagemsScriptableObject.StratagemDetachmentData StratagemsDefaultData;
 	public StratagemsScriptableObject.StratagemDetachmentData StratagemsTeamData;
 

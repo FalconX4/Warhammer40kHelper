@@ -20,7 +20,7 @@ public class WeaponAttackWindow : MonoBehaviour
 
 		List<AttackedModel> children = new List<AttackedModel>();
 		var teamData = team1 ? Database.Instance.Team2ScriptableObject : Database.Instance.Team1ScriptableObject;
-		foreach (var data in teamData.TeamData)
+		foreach (var data in teamData.UnitsData)
 		{
 			var model = Instantiate(ModelPrefab, ModelParent);
 			if ((data.ISv.Type == TeamScriptableObject.InvulnerableType.All) ||
