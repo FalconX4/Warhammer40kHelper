@@ -15,6 +15,9 @@ public class DefenseWindow : MonoBehaviour
 	public List<Image> ImagesUI;
 	public List<TextMeshProUGUI> TextsUI;
 
+	private float _defaultHeight;
+	private float _defaultOffsetMinY;
+
 	public void SetData(TeamScriptableObject.UnitData unitData, bool team1)
 	{
 		Utility.ClearChilds(ModelParent);
@@ -42,8 +45,14 @@ public class DefenseWindow : MonoBehaviour
 			child.transform.SetAsLastSibling();
 
 		// Reset container size
+		if (_defaultHeight == 0)
+		{
+			_defaultHeight = Container.rect.height;
+			_defaultOffsetMinY = Container.offsetMin.y;
+		}
+
 		var prefabHeight = (ModelPrefab.transform as RectTransform).sizeDelta.y;
-		Container.sizeDelta = new Vector2(Container.sizeDelta.x, Mathf.Min((ModelParent.childCount + 1) * prefabHeight, MaxSize));
+		Container.sizeDelta = new Vector2(Container.sizeDelta.x, (Container.offsetMax.y - _defaultOffsetMinY) - (_defaultHeight - Mathf.Min((ModelParent.childCount + 1) * prefabHeight, _defaultHeight)));
 
 		// Set the correct color scheme
 		var teamUI = Database.Instance.RacesScriptableObject.Get(teamData.Race);

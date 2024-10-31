@@ -1,5 +1,4 @@
 using System.Collections.Generic;
-using System.Linq;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -9,14 +8,18 @@ public class WeaponAttackWindow : MonoBehaviour
 	public AttackedModel ModelPrefab;
 	public Transform ModelParent;
 	public RectTransform Container;
+	public float MaxSize;
 
 	[Header("UI")]
 	public List<Image> ImagesUI;
 	public List<TextMeshProUGUI> TextsUI;
 
+	private float _defaultHeight;
+	private float _defaultOffsetMinY;
+
 	public void SetData(TeamScriptableObject.WeaponData weaponData, bool team1)
 	{
-		Utility.ClearChilds(ModelParent, 1);
+		Utility.ClearChilds(ModelParent);
 
 		List<AttackedModel> children = new List<AttackedModel>();
 		var teamData = team1 ? Database.Instance.Team2ScriptableObject : Database.Instance.Team1ScriptableObject;
@@ -38,8 +41,14 @@ public class WeaponAttackWindow : MonoBehaviour
 			child.transform.SetAsLastSibling();
 
 		// Reset container size
+		if (_defaultHeight == 0)
+		{
+			_defaultHeight = Container.rect.height;
+			_defaultOffsetMinY = Container.offsetMin.y;
+		}
+
 		var prefabHeight = (ModelPrefab.transform as RectTransform).sizeDelta.y;
-		Container.sizeDelta = new Vector2(Container.sizeDelta.x, ModelParent.childCount * prefabHeight);
+		Container.sizeDelta = new Vector2(Container.sizeDelta.x, (Container.offsetMax.y - _defaultOffsetMinY) - (_defaultHeight - Mathf.Min((ModelParent.childCount + 1) * prefabHeight, _defaultHeight)));
 
 		// Set the correct color scheme
 		var teamUI = Database.Instance.RacesScriptableObject.Get(teamData.Race);
@@ -56,8 +65,8 @@ public class WeaponAttackWindow : MonoBehaviour
 		if (model1WR != model2WR)
 			return model1WR - model2WR;
 
-		var model1ISv = model1.ISV.text.Length == 0 ? 999 : int.Parse(model1.ISV.text.Remove(model1.ISV.text.Length - 1, 1));
-		var model2ISv = model2.ISV.text.Length == 0 ? 999 : int.Parse(model2.ISV.text.Remove(model2.ISV.text.Length - 1, 1));
+		var model1ISv = model1.ISV.text == null || model1.ISV.text.Length == 0 ? 999 : int.Parse(model1.ISV.text.Remove(model1.ISV.text.Length - 1, 1));
+		var model2ISv = model2.ISV.text == null || model2.ISV.text.Length == 0 ? 999 : int.Parse(model2.ISV.text.Remove(model2.ISV.text.Length - 1, 1));
 		if (model1ISv != model2ISv)
 			return model2ISv - model1ISv;
 

@@ -67,6 +67,7 @@
     <Compile Include="Assets\Script\WindowPart\StratagemIcon.cs" />
     <Compile Include="Assets\Script\Utility.cs" />
     <Compile Include="Assets\Script\Data\TeamScriptableObject.cs" />
+    <Compile Include="Assets\Script\Window\CloseButton.cs" />
     <Compile Include="Assets\Script\Data\NameDescriptionScriptableObject.cs" />
     <Compile Include="Assets\Script\UIManager.cs" />
     <Compile Include="Assets\Script\WindowPart\Weapons.cs" />
